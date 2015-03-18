@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_item_height"
+    android:paddingStart="?android:attr/listPreferredItemPaddingLeft" >
+
+    <amigo.widget.AmigoTextView
+        android:id="@+id/tv_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textColor="@color/import_export_text_color"
+        android:textSize="@dimen/listview_item_textsize" />
+    <!-- gionee <wangpan> <2013-12-30> modify for CR00989585 begin -->
+    <CheckBox
+        android:id="@+id/cb_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:clickable="false"
+        android:focusable="false" />
+    <!-- gionee <wangpan> <2013-12-30> modify for CR00989585 end -->
+</RelativeLayout>

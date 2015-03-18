@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+-->
+<!--
+gn pengwei 20121205 modify  begin
+Widget can drag on the table, 
+and the android: layout_width and android: layout_height Settings,
+ image format, if the android: layout_width for fixed value, such as: 140 dp, it can't drag
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_bg_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/widget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.1"
+        android:maxLines="5"
+        android:paddingStart="8dip"
+        android:paddingEnd="5dip"
+        android:textColor="#FF663300"
+        android:textSize="14sp" />
+
+    <!-- gn lilg 2012-11-09 add for CR00725627 -->
+
+    <!-- Gionee <wangpan><2014-04-13> modify for CR01133954 begin -->
+    <ImageView
+        android:id="@+id/widget_alarm_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        android:background="@drawable/gn_alarm_small" />
+    <!-- Gionee <wangpan><2014-04-13> modify for CR01133954 end -->
+    <!-- </FrameLayout> -->
+
+</RelativeLayout><!-- gn pengwei 20121205 modify  end -->

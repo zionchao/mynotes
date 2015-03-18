@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout
+        android:id="@+id/actionbar_note_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       	android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+        <ImageButton
+            android:id="@+id/actionbar_note_menu_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/actionBarItemBackground"
+            android:gravity="center_vertical"
+            android:src="@drawable/note_detail_action_menu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionbar_note_attachment_bg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/actionbar_note_menu">
+        <ImageButton
+            android:id="@+id/actionbar_note_attachment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/actionBarItemBackground"
+            android:gravity="center_vertical"
+            android:src="@drawable/note_attachment" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/note_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/actionbar_note_attachment_bg" >
+
+        <ImageButton
+            android:id="@+id/hidden_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="9dp"
+            android:background="@drawable/import_or_export_title_back_bg_white"
+            android:scaleType="center"
+            android:visibility="invisible" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/actionbar_note_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/hidden_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/hidden_button"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/title_text_bg_selector_white"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/actionbar_title_text_size" />
+    </RelativeLayout>
+</RelativeLayout>

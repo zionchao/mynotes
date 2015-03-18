@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent" >
+        <amigo.widget.AmigoTextView
+            android:id="@+id/change_bg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/actionbar_title_text_size" />
+        </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       	android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+       	android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+         <ImageButton
+            android:id="@+id/change_bg_hidden_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/import_or_export_title_back_bg_white"
+            android:scaleType="center"
+            android:visibility="invisible" />
+        <ImageButton
+            android:id="@+id/change_background_ok_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/change_bg_hidden_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/change_bg_hidden_button"
+            android:background="?android:attr/actionBarItemBackground"
+            android:gravity="center_vertical"
+            android:src="@drawable/change_background_ok" />
+    </RelativeLayout>
+</RelativeLayout>

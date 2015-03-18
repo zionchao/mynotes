@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Note信息详细展示页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_detail_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/gn_background_holo_light"
+    >
+	<android.support.v4.view.ViewPager   
+        android:id="@+id/note_detail_browse_vp"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"
+        android:visibility="gone" 
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/note_top_edit_lyt"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/edit_text_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp" >
+
+            <!-- cao 20121024 add for test start -->
+
+            <LinearLayout
+                android:id="@+id/note_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_media_recorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/note_time_location_yellow_bg"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/note_label_bg"
+                        android:gravity="center_vertical" >
+
+                        <amigo.widget.AmigoTextView
+                            android:id="@+id/tv_current_record_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:gravity="center_vertical"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/note_media_recorder_text_corlor"
+                            android:textSize="@dimen/medium_text_size" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_media_record"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/note_record_process_bg"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_weight="1"
+                            android:progressDrawable="@drawable/progress_bar_media_record" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_stop_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="41dp"
+                        android:background="@drawable/media_btn_delete_selector"
+                        android:contentDescription="@null"
+                        android:src="@drawable/note_media_btn_stop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_media_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/note_time_location_yellow_bg"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/note_label_bg"
+                        android:gravity="center_vertical" >
+
+                        <amigo.widget.AmigoTextView
+                            android:id="@+id/tv_current_play_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/note_media_recorder_text_corlor"
+                            android:textSize="@dimen/medium_text_size" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_media_player"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/progress_bar_bg_media_player"
+                            android:progressDrawable="@drawable/progress_bar_media_player" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_stop_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="41dp"
+                        android:background="@drawable/media_btn_delete_selector"
+                        android:contentDescription="@null"
+                        android:src="@drawable/note_media_btn_stop" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/note_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/note_time_location_yellow_bg" >
+
+                    <amigo.widget.AmigoTextView
+                        android:id="@+id/note_time_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="?android:attr/actionBarItemBackground"
+                        android:contentDescription="@null"
+                        android:textColor="@color/note_grid_time_yellow"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <ImageView
+                        android:id="@+id/add_attachment_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/actionBarItemBackground"
+                        android:clickable="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/gn_attachment"
+                        android:visibility="gone" />
+                </RelativeLayout>
+                <!-- cao 20121024 add for test end -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/note_top"
+                android:background="@drawable/edit_yellow_white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/label_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/label_alarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:id="@+id/label_alarm_context"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/note_label_bg"
+                            android:clickable="true" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/label_alarm" />
+
+                            <amigo.widget.AmigoTextView
+                                android:id="@+id/alarm_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/label_alarm_context"
+                            android:background="@drawable/note_label_btn_bg"
+                            android:clickable="true" >
+
+                            <ImageView
+                                android:id="@+id/alarm_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/label_cancel_normal" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/label_division"
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/label_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="72dp"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/label_address_context"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/note_label_bg"
+                            android:clickable="true" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/label_address" />
+
+                            <amigo.widget.AmigoTextView
+                                android:id="@+id/address_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/label_address_context"
+                            android:background="@drawable/note_label_btn_bg"
+                            android:clickable="true" >
+
+                            <ImageView
+                                android:id="@+id/address_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/label_cancel_normal" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/label_area"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true" >
+					<amigo.widget.AmigoTextView
+                        android:id="@+id/note_show_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="top"
+                        android:minLines="16"
+                        android:orientation="vertical"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:visibility="gone"
+                        android:scrollbars="vertical"
+                        android:textSize="16sp" />
+                    <com.gionee.note.NoteEditText
+                        android:id="@+id/et_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:lineSpacingMultiplier="1.2"
+                        android:linksClickable="false"
+                        android:minLines="16"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/note_grid_content_yellow"
+                        android:textCursorDrawable="@drawable/gn_text_cursor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+                <ImageView
+                    android:id="@+id/create_new_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="8dp"
+                    android:clickable="true"
+                    android:src="@drawable/note_detail_add" >
+                </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/note_detail_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_yellow_white_bottom"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+</LinearLayout>

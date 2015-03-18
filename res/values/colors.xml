@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义一些用到的颜色变量 -->
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="transparent">#0000ff00</color>
+    <color name="grey">#ffaaaaaa</color>
+    <color name="white">#ffffff</color>
+    <color name="white_white">#505050</color>
+    <color name="time_color">#aeb7bf</color>
+    <color name="time_color_white">#505050</color>
+    <color name="gridview_color">#505050</color>
+    <color name="gridview_color_white">#505050</color>
+    <color name="no_note_text_color">#6f8aa9</color>
+	<color name="no_note_text_color_white">#776341</color>
+    
+    <color name="note_title_text_color">#233f5a</color>
+    <color name="note_title_text_color_white">#776341</color>
+    <color name="note_edit_text_color">#474747</color>
+	<color name="note_edit_text_color_white">#505050</color>
+    
+    <!-- gn lilg 2012-07-26 -->
+    <color name="import_export_btn_color">#233f5a</color>
+    <color name="import_export_btn_color_white">#776341</color>
+    
+    <color name="import_export_btn_disabled_color">#6d96b5</color>
+    <color name="import_export_btn_disabled_color_white">#bca991</color>
+
+    <color name="import_export_text_color_white">#776341</color>
+    <color name="import_export_text_color">#444444</color>
+    <color name="import_export_main_text_color">#66000000</color>
+    
+    <color name="all_edit_bottom_btn_text_color">#666666</color>
+    <color name="all_edit_bottom_btn_text_color_dis">#80666666</color>
+    <color name="note_title">#444444</color>    
+    <color name="note_content">#666666</color>
+    <!-- Gionee <wangpan> <2014-01-17> modify for CR01026273 begin -->
+    <color name="about_note_title">#222222</color>    
+    <color name="about_note_content">#444444</color>
+    <color name="actionbar_title_color">#ffce4a</color>
+    <!-- Gionee <wangpan> <2014-01-17> modify for CR01026273 end -->
+    <!-- gn lilg 2012-07-26 -->
+    
+    <!-- gionee lilg 2013-01-30 modify for UI begin-->
+    <!--  
+    <color name="note_list_content_blue">#2e4f66</color>
+    <color name="note_list_time_blue">#5e8ea1</color>
+    <color name="note_list_content_yellow">#7e5333</color>
+    <color name="note_list_time_yellow">#b38e58</color>
+    <color name="note_list_content_pink">#834a52</color>
+    <color name="note_list_time_pink">#975663</color>
+    <color name="note_list_content_green">#476e27</color>
+    <color name="note_list_time_green">#6a8a4b</color>
+    -->
+    <color name="note_list_content_blue">#aa003153</color>
+    <color name="note_list_time_blue">#99006993</color>
+    <color name="note_list_content_yellow">#aa522300</color>
+    <color name="note_list_time_yellow">#999d5c00</color>
+    <color name="note_list_content_pink">#aa70000f</color>
+    <color name="note_list_time_pink">#807e001e</color>
+    <color name="note_list_content_green">#aa003153</color>
+    <color name="note_list_time_green">#99224b00</color>
+    <!--  
+    <color name="note_grid_content_blue">#2e4f66</color>
+    <color name="note_grid_time_blue">#5e8ea1</color>
+    <color name="note_grid_content_yellow">#7e5333</color>
+    <color name="note_grid_time_yellow">#b38e58</color>
+    <color name="note_grid_content_pink">#834a52</color>
+    <color name="note_grid_time_pink">#975663</color>
+    <color name="note_grid_content_green">#476e27</color>
+    <color name="note_grid_time_green">#6a8a4b</color>
+    -->
+    <color name="note_grid_content_blue">#aa003153</color>
+    <color name="note_grid_time_blue">#99006993</color>
+    <color name="note_grid_content_yellow">#aa522300</color>
+    <color name="note_grid_time_yellow">#999d5c00</color>
+    <color name="note_grid_content_pink">#aa70000f</color>
+    <color name="note_grid_time_pink">#807e001e</color>
+    <color name="note_grid_content_green">#aa003153</color>
+    <color name="note_grid_time_green">#99224b00</color>
+    <!-- gionee lilg 2013-01-30 modify for UI begin-->
+    
+    <!-- gionee lilg 2013-02-25 modify for media UI begin-->
+    <color name="note_media_recorder_text_corlor">#ffffff</color>
+    <!-- gionee lilg 2013-02-25 modify for media UI end-->
+    
+    <color name="orange">#FFA500</color>
+    <color name="note_nothing">#66000000</color>
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01066766 begin-->
+    <color name="home_note_nothing">#33000000</color>
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01066766 end-->
+    <color name="window_background_color">#fafafa</color>
+    <color name="time_selected_color">#ff9000</color>
+    <color name="time_unselected_color">#cc000000</color>
+</resources>

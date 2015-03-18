@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 显示记录时ListView中每一行的布局方式 -->
+<!-- Gionee <wangpan><2014-06-04> modify for CR01274758 begin -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp" 
+    android:paddingBottom="@dimen/listview_margin_bottom"
+    android:paddingTop="@dimen/listview_margin_top">
+<!-- Gionee <wangpan><2014-06-04> modify for CR01274758 end -->
+    <RelativeLayout
+        android:id="@+id/all_edit_listview_folder_all_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/folder_mini_icon_white" >
+        <!-- gionee wangpan 2013-12-30 modify for CR00989585 begin -->
+        <CheckBox
+            android:id="@+id/all_edit_listview_folder_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <!-- gionee wangpan 2013-12-30 modify for CR00989585 end -->
+
+        <RelativeLayout
+            android:id="@+id/all_edit_listview_folder_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/all_edit_listview_folder_select"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/all_edit_listview_folder_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+				android:textColor="@color/note_title"
+                android:textSize="@dimen/middle_title_text_size" />
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/all_edit_listview_folder_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/all_edit_listview_folder_content"
+                android:layout_toEndOf="@+id/all_edit_listview_folder_content"
+			    android:textColor="@color/note_title"
+                android:textSize="@dimen/middle_title_text_size" />
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/all_edit_listview_folder_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_edit_listview_folder_content"
+				android:textColor="@color/note_title"
+                android:textSize="@dimen/sub_title_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/grey_imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="#22000000" />
+
+</FrameLayout>

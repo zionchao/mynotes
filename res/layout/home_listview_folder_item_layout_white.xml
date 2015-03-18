@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 显示记录时ListView中每一行的布局方式 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_folder_listview_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp"
+    android:paddingBottom="@dimen/listview_margin_bottom"
+    android:paddingTop="@dimen/listview_margin_top" >
+
+    <!-- Gionee <wangpan><2014-05-15> modify for CR01249465 begin -->
+
+    <RelativeLayout
+        android:id="@+id/home_folder_listview_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+         android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_folder_listview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:paddingTop="8dp"
+		    android:textColor="@color/note_title"
+            android:textSize="@dimen/middle_title_text_size" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_folder_listview_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_toEndOf="@+id/home_folder_listview_content"
+		    android:textColor="@color/note_title"
+            android:textSize="@dimen/middle_title_text_size" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_folder_listview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_below="@id/home_folder_listview_content"
+		    android:textColor="@color/note_title"
+            android:textSize="@dimen/sub_title_text_size" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <!-- Gionee <wangpan><2014-05-15> modify for CR01249465 end -->
+
+</RelativeLayout>

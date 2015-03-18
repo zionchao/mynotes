@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gn_background_holo_light" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:src="@drawable/about_icon" />
+
+        <!-- Gionee <wangpan> <2014-01-17> modify for CR01026273 begin -->
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/about_title"
+            android:textColor="@color/about_note_title"
+            android:textSize="@dimen/title_text_size" />
+
+        <!--
+             <amigo.widget.AmigoTextView
+            android:id="@+id/tv_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/about_version"
+            android:textSize="20sp" />
+        -->
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/about_new_function"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/about_add_position"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_add_alarm"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_add_iexport"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_add_widget"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+        <!-- Gionee <wangpan><2014-03-19> delete for CR01071390 begin -->
+        <!--
+            <amigo.widget.AmigoTextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_record"
+            android:textColor="@color/about_note_content"
+            android:textSize="12sp" />
+        -->
+        <!-- Gionee <wangpan><2014-03-19> delete for CR01071390 end -->
+
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_copyright"
+            android:textColor="@color/about_note_content"
+            android:textSize="@dimen/medium_text_size"
+            android:visibility="gone" />
+
+        <!-- Gionee <wangpan> <2014-01-17> modify for CR01026273 end -->
+        <LinearLayout
+            android:id="@+id/line_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/about_update_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/about_button_bg_selector_white"
+                android:clickable="true"
+                android:gravity="center|top"
+                android:paddingTop="10dp"
+                android:text="@string/about_update"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

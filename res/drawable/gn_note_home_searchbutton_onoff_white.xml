@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/gn_note_search_button_off" android:state_pressed="false"/>
+    <!-- Gionee <wangpan><2014-03-14> add for CR01111817 begin -->
+    <item android:drawable="@drawable/gn_note_search_button_off_press" android:state_pressed="true"/>
+    <!-- Gionee <wangpan><2014-03-14> add for CR01111817 end -->
+
+</selector>

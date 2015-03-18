@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome</string>
+    <string name="app_name">Catatan</string>
+    <string name="new_note">Tambah catatan</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="delete">Hapus</string>
+    <string name="delete_note">Are you sure you want to delete Note?</string>
+    <string name="add_shortcut_to_home">Add to home</string>
+    <string name="new_folder">Folder Baru</string>
+    <string name="move_to_folder">Pindah ke folder</string>
+    <string name="backup_data">Prepare data</string>
+    <string name="set_password">Set password</string>
+    <string name="about">Tentang</string>
+    <string name="search">Mencari</string>
+    <string name="all_operate">Pilih Beberapa</string>
+    <string name="edit_folder_title">Change folder name</string>
+    <string name="move_out_of_folder">Pindah from folder</string>
+    <string name="alarm_time">Set Alarm</string>
+    <string name="change_font_size">Font size</string>
+    <string name="menu_list_mode">Enter check list</string>
+    <string name="menu_normal_mode">Leave check list</string>
+    <string name="share_sms_or_email">Bagikan</string>
+    <string name="share">Bagikan</string>
+    <string name="share_with_sms">SMS</string>
+    <string name="share_with_email">Email</string>
+    <string name="share_with_bluetooth">Bluetooth</string>
+    <string name="share_with_more">More share</string>
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Batal</string>
+    <string name="backupDataFailed">Backup data failed !</string>
+    <string name="backupDataSuc">Backup data success !</string>
+    <string name="change_password">Change Password</string>
+    <string name="clear_password">Empty password</string>
+    <string name="restoreDataFailed">Restore data failed !</string>
+    <string name="restoreDataSuc">Restore data success !</string>
+    <string name="empty_view_text">This is the empty view</string>
+    <string name="widget_stackview_name">Note</string>
+    <string name="app_widget2x2">Notes 2x2</string>
+    <string name="app_widget4x4">Notes 4x4</string>
+    <string name="widget_click_add_note">Click add note</string>
+    <string name="clearall">Are you sure delete?</string>
+    <string name="gn_deletenotepad">This Note will be deleted</string>
+    <string name="notepadyes">Yes</string>
+    <string name="notepadcancel">No</string>
+    <string name="note_link_tel">Call</string>
+    <string name="note_link_email">Send email</string>
+    <string name="note_link_web">Browse web</string>
+    <string name="note_link_other">Open map</string>
+    <string name="search_label">mencari</string>
+    <string name="search_hint">please input</string>
+
+    <plurals name="search_results">
+        <item quantity="one">%1$d result for \"%2$s\": </item>
+        <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+
+    <string name="no_results">No results found for \"%s\"</string>
+    <string name="select_listview_mode">List View</string>
+    <string name="select_gridview_mode"> Grid View</string>
+    <string name="inport_export">Impor/Ekspor</string>
+    <string name="home_title">Catatan</string>
+    <string name="all_secect">Select all</string>
+    <string name="all_no_select">Unselect all</string>
+    <string name="select_count">%1$s dipilih </string>
+    <string name="delete_note_dialog_title">Hapus</string>
+    <string name="delete_note_dialog_body">Apakah Anda yakin ingin menghapus catatan yang telah dipilih?</string>
+    <string name="delete_note_dialog_sure">Ok</string>
+    <string name="delete_note_dialog_cancle">Batal</string>
+    <string name="no_note_folder">Tidak ada catatan</string>
+    <string name="folder_title_name">Folder</string>
+    <string name="note_new_title_label">Masukkan Judul</string>
+    <string name="note_change_bgcolor">Ubah warna latar</string>
+    <string name="note_delete_note_dialog_body">Apakah Anda yakin ingin menghapus catatan yang telah dipilih?</string>
+    <string name="no_search_result">No matches</string>
+    <string name="hint_search_note">Cari catatan atau folder</string>
+    <string name="note_title_max_length">Title enter up to 60</string>
+    <string name="folder_title_max_length">Folder name enter up to 60</string>
+    <string name="share_no_note_infolder_toast">Unable to share empty folder or empty note. </string>
+    <string name="all_delete_dialog_message">Operating, please wait.</string>
+    <string name="note_content_max_length">Content enter up to 5000</string>
+    <string name="note_safe_mode">Note content is invisible in guest mode.</string>
+
+    <!-- gn lilg 20120721 add for export start -->
+    <string name="file_path_internalmemory">export</string>
+    <string name="file_name_txt_format">%s.txt</string>
+    <string name="format_date_ymd">yyyyMMdd</string>
+    <string name="format_date_ymdhms">yyyy-MM-dd_HHmmss</string>
+    <string name="format_date_yyyymmdd">yyyy.MM.dd HH:mm</string>
+    <string name="str_defaultRecordExportTime">Tidak ada catatan ekspor</string>
+    <string name="str_defaultRecordImportTime">Tidak ada catatan impor</string>
+    <string name="str_preRecordExportTime">Waktu ekspor terakhir : </string>
+    <string name="str_preRecordImportTime">Waktu impor terakhir : </string>
+    <string name="str_importExport">Impor/Ekspor Catatan</string>
+    <string name="str_import_note">Impor Catatan</string>
+    <string name="str_export_note">Ekspor Catatan</string>
+    <string name="str_next">Berikutnya</string>
+    <string name="str_sdcard">Kartu SD</string>
+    <string name="str_internal_memory">Penyimpanan Internal</string>
+    <string name="str_all_select">Select all</string>
+    <string name="str_no_select">Unselect all</string>
+    <string name="str_import">Import</string>
+    <string name="str_export">Export</string>
+    <string name="str_export_confirm">Confirm Export</string>
+    <string name="str_export_msg">Are you sure you want to export the selected notes to </string>
+    <string name="export_error_title">Export failed</string>
+    <string name="export_error_message_sdcard">Export failed, please check SD card.</string>
+    <string name="export_error_message_internal_memory">Export failed,please check Internal Storage.</string>
+    <string name="toast_import_no_data">No note can be imported！</string>
+    <string name="import_note_message_sd">Importing notes"/SD card</string>
+    <string name="import_note_message_internal">Importing notes"internal Storage</string>
+    <string name="import_note_progress_message_first">"\n\nImporting</string>
+    <string name="import_note_progress_message_next">notes(total</string>
+    <string name="import_note_progress_message_end">)</string>
+    <string name="import_note_progress_message_title">Importing notes</string>
+    <string name="import_note_progress_message_content">"\n\nImporting first note (total</string>
+    <string name="import_note_dialog_message_content">Are you sure you want to cancel import?</string>
+    <string name="import_note_no_sd">Please check SD card if there is available?</string>
+    <string name="import_note_no_internal">The internal Storage not exist or is unavailable！</string>
+    <string name="promat">Prompt</string>
+    <string name="toast_export_no_data">No exist note can be exported!</string>
+    <string name="export_note_dialog_message_first">"/SD card</string>
+    <string name="export_note_dialog_message_next">folder"</string>
+    <string name="export_note_dialog_message_next_next">"internal Storage </string>
+    <string name="export_note_dialog_message_end">folder"</string>
+    <string name="export_note_dialog_message_end_end">？</string>
+    <string name="export_note_message_sd">Exporting notes to "SD card %1$s%2$s "</string>
+    <string name="export_note_message_internal">Exporting notes to "internal Storage %1$s%2$s "</string>
+    <string name="export_note_progress_message_first">\n\nExporting  %1$s  notes(total %2$s )</string>
+    <string name="export_note_progress_message_title">exporting notes</string>
+    <string name="check_sd_content">Please check SD card free space is more than 1M?</string>
+    <string name="check_internal_content">Please check internal Storage free space if there is more than 1M?</string>
+    <!-- gn lilg 20120721 add for export start -->
+
+
+    <!-- gn lilg 20120831 add for note alarm start -->
+    <string name="datetime_dialog_ok">Atur</string>
+    <string name="datetime_dialog_cancel">Batal</string>
+    <!-- gn lilg 20120831 add for note alarm end -->
+    <string name="date_time_set">Atur</string>
+    <string name="cancel">Batal</string>
+    <string name="gn_dialog_title">Atur waktu</string>
+    <string name="gn_time_early">Setup time can not earlier than the current time</string>
+
+    <!-- gn lilg 20120831 add for CR00693893 start -->
+    <string name="data_loading">data loading...</string>
+    <!-- gn lilg 20120831 add for CR00693893 end -->
+
+    <string name="location">Geographical position</string>
+    <string name="other_location">Point of interest</string>
+    <string name="gn_location_nonet">No connection avilable，set network please！</string>
+    <string name="gn_location_loading">Loading...please wait</string>
+    <string name="gn_location_nogps_tip">GPS doesnot open, open GPS will more accurate</string>
+    <string name="gn_location_tip_title">GPRS hint</string>
+    <string name="gn_location_tip_body">You are now using the online network, to continue the operation may produce HTTP traffic fee which need you pay for the cost, specific costs please consult the local operators</string>
+    <string name="gn_location_without_tip">Donot ask again</string>
+    <string name="gn_location_know_it">Know it</string>
+    <string name="gn_location_others_poi">Point of interest</string>
+    <string name="gn_location_error">Sorry，not loading your location</string>
+    <string name="gn_location_no_setting">请在位置信息访问权限中打开网络位置信息</string>
+    <string name="gn_location_no_others_poi">There is no point of interest</string>
+    <string name="alarm">Alarm</string>
+    <string name="geolocation">Location</string>
+    <string name="check">Check</string>
+    <string name="close">Close</string>
+    <string name="more">More</string>
+    <string name="modify">Ubah</string>
+    <string name="alarm_modify">修改</string>
+    <string name="note_recording">录音</string>
+    <string name="notification_recording">正在录音...</string>
+    <string name="notification_stopped">录音已终止</string>
+    <string name="notification_warning">存储空间不足(小于%d分钟)</string>
+    <string name="note_send_luncher">Kirim ke desktop</string>
+    <string name="note_not_send_luncher_toast">Empty note can not be sent to the desktop</string>
+    <string name="note_send_luncher_failed_noscence_toast">Failure, desktop without enough space</string>
+    <string name="note_send_luncher_success_toast">Sudah ditambahkan ke layar depan</string>
+    <string name="note_send_luncher_haved_toast">Catatan sudah dilayar depan</string>
+    <string name="note_send_luncher_failed_toast">Send desktop failure</string>
+    <string name="note_not_support_send_luncher">The current desktop does not support sending function.</string>
+    <!-- 关于页面  GN pengwei 2012-11-27 add begin -->
+    <string name="about_mode">Tentang</string>
+    <string name="about_title">Note</string>
+    <string name="about_version">Versi:</string>
+    <string name="about_new_function">新增功能:</string>
+    <string name="about_add_position">查看便签新增滑动效果</string>
+    <string name="about_add_alarm">优化整体加载速度</string>
+    <string name="about_add_iexport">新增录音功能</string>
+    <string name="about_add_widget">优化定时提醒</string>
+    <string name="about_record">优化桌面widget支持</string>
+    <string name="about_copyright">金立通信设备有限公司版权所有</string>
+    <string name="about_update">版本更新</string>
+    <!-- update -->
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="upgrade_title">金立便签升级</string>
+    <string name="donot_download">暂不安装</string>
+    <string name="download_now">立即安装</string>
+    <string name="force">该版本只有升级之后才可以使用，如果不升级可能导致客户端不能使用</string>
+    <string name="new_down_desc1">温馨提示：</string>
+    <string name="new_down_desc2">会保存上一版本的使用记录。</string>
+    <string name="new_down_desc3">升级使用流量较多，建议使用WIFI。</string>
+    <string name="now_version">当前版本：</string>
+    <string name="new_version">最新版本：</string>
+    <string name="new_feature_desc">改进信息：</string>
+    <string name="file_size">大小</string>
+    <string name="no_display_this_version">本版本不再提示。</string>
+    <string name="pay_show_title">提示</string>
+    <string name="message_update_error">版本更新出错，请确认网络良好且存储卡有足够空间，重新更新！</string>
+    <string name="download_retry">重新更新</string>
+    <string name="message_network_error">网络异常，请检查网络连接后再尝试！</string>
+    <string name="message_update_error_nospace">存储卡存储空间不足，不能完成更新操作，请检查存储卡再尝试！</string>
+    <string name="message_update_error_nosdcard">存储卡不存在，不能完成更新操作，请检查存储卡再尝试！</string>
+    <string name="message_update_apk">正在进行金立便签升级</string>
+    <string name="message_update_check">正在检查配置项</string>
+    <!-- update -->
+    <!-- 关于页面  GN pengwei 2012-11-27 add end -->
+    <!-- gionee 20121204 jiating modify for CR00739261 begin -->
+    <string name="gn_importnote_complete">便签导入已完成</string>
+    <string name="gn_exportnote_complete">便签导出已完成</string>
+    <!-- gionee 20121204 jiating modify for CR00739261 end -->
+    <string name="gn_about_no_need_update">已经是最新版本，不需要更新</string>
+    <string name="note_alarm_failure">闹铃失效</string>
+    <string name="alarm_today">今天</string>
+    
+    <!-- gionee lilg 20130111 add for default note begin -->
+    <string name="default_note_title">欢迎使用便签！</string>
+    <string name="default_note_content">欢迎使用便签！\n\t从应用中或桌面widget都可以快速新建和保存便签；\n\t您可以随时在便签中记录想法、信息或者待办事项，并添加提醒和地理位置信息；\n\t便签也提供了调整便签背景、创建文件夹、导入导出、将便签发送至桌面等实用功能，便签助您更好地生活！</string>
+    <!-- gionee lilg 20130111 add for default note end -->
+    
+    <!-- gionee lilg 20130220 add for note media begin -->
+    <string name="message_media_recorder_start_error">启动录音失败!</string>
+    <string name="message_media_player_start_error">播放失败!</string>
+    <string name="message_media_recorder_is_recording">正在录音，无法播放文件</string>
+    <string name="message_media_player_file_not_exists">播放文件不存在</string>
+    <string name="no_title">无标题</string>
+    <string name="home_load_datas_error">便签获取数据异常，程序即将退出</string>
+    <!-- gionee lilg 20130220 add for note media end -->
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export begin -->
+    <string name="export_alert_exporting">正在执行导出</string>
+    <string name="import_alert_importing">正在执行导入</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export end -->
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record begin -->
+    <string name="message_media_record_num_max">录音数量不能超过5条</string>
+    <string name="message_media_record_time_max">录音时间达到最大值，停止录音</string>
+    <string name="message_sdcard_internal_memory_both_not_ok">SD卡及内部存储器均不可用</string>
+    <string name="message_sdcard_internal_memory_both_not_exists_or_unavailable">存储器不可用，无法添加录音</string>
+    <string name="message_sdcard_internal_memory_both_storage_is_full">储存空间不足，无法添加录音</string>
+    <string name="message_sdcard_not_ok">SD卡不可用或空间不足</string>
+    <string name="message_internal_memory_not_ok">内部存储器不可用或空间不足</string>
+    <string name="message_media_record_add_fail">储存路径错误，当前便签无法添加录音</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record end -->
+    
+    <!-- Gionee <lilg><20130416> add for note batch operate begin -->
+    <string name="message_batch_delete">正在执行批量删除</string>
+    <string name="message_batch_move">正在执行批量移动</string>
+    <!-- Gionee <lilg><20130416> add for note batch operate end -->
+    
+    <string name="note_detail_menu">菜单</string>
+</resources>

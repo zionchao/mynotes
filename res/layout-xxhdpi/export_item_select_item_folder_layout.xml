@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/folder_background"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/listview_margin_bottom"
+    android:paddingTop="@dimen/listview_margin_top" >
+
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 begin-->
+    <RelativeLayout
+        android:id="@+id/info_folder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/checkbox"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+		        android:textColor="@color/note_title"
+                android:textSize="@dimen/middle_title_text_size" />
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/sub_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/title"
+                android:layout_alignBaseline="@id/title"
+		        android:textColor="@color/note_title"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/update_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+		        android:textColor="@color/note_title"
+                android:textSize="@dimen/sub_title_text_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 end-->
+
+</LinearLayout>

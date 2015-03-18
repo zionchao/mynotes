@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gionee.note"
+    android:versionCode="10000187"
+    android:versionName="1.6.0.o" >
+
+    <!-- 取得向SDCard写文件的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Gionee <wangpan> <2014-03-24> add for CR01131012 begin -->
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <!-- Gionee <wangpan> <2014-03-24> add for CR01131012 end -->
+    <!-- 发送到桌面需要的权限(shortcut) -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 发送短信权限 -->
+    <!-- Gionee <wangpan><2014-05-05> delete for CR01237776 begin -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <!-- Gionee <wangpan><2014-05-05> delete for CR01237776 end -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- hxc add start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- hxc add end -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- gn pengwei 20121205 add for update begin -->
+    <uses-permission android:name="gn.com.android.Statistics.permission.RECEIVE" />
+	<!-- gn pengwei 20121205 add for update end -->
+	
+	<!-- gn lilg 2013-01-23 add for location begin -->
+    <!-- Gionee <wangpan><2014-05-05> delete for CR01237776 begin -->
+	<!-- <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission> -->
+    <!-- Gionee <wangpan><2014-05-05> delete for CR01237776 end -->
+    <!-- gn lilg 2013-01-23 add for location end -->
+	
+	<!-- Gionee <lilg><2013-05-31> add for CR00819114 begin -->
+	<uses-permission android:name="com.gionee.alarm.permission.SET_ACCURATE_WAKE_ALARM" />
+	<!-- Gionee <lilg><2013-05-31> add for CR00819114 end -->
+	
+    <uses-sdk android:minSdkVersion="14" />
+
+    <application
+        android:name="com.gionee.note.content.NoteApplication"
+        android:icon="@drawable/home_note_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" 
+        android:theme="@style/GNNoteStartTheme">
+        <!-- gionee 20121218 jiating modify for theme begin -->
+        <!-- Gionee <wangpan> <2014-01-23> modify for new version of YouJuAgent  begin-->
+        <!-- <provider android:name="com.youju.statistics.database.MyContentProvider" android:authorities="8CA459AEB5858190"/> -->
+        <!-- Gionee <wangpan> <2014-01-23> modify for new version of YouJuAgent  end-->
+        <!-- Gionee <wangpan> <2014-05-06> delete for CR01238211 begin -->
+        <!-- <meta-data android:name="YJ_APP_ID" android:value="8CA459AEB5858190"/>  -->
+        <!-- Gionee <wangpan> <2014-05-06> delete for CR01238211 end -->
+	<!-- Gionee <wangpan><2014-04-03> modify for CR01164887 begin-->
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+             >
+	<!-- Gionee <wangpan><2014-04-03> modify for CR01164887 end-->
+        <!-- gionee 20121218 jiating modify for theme end -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            <meta-data android:name="android.app.default_searchable" 
+            android:value=".NotesSearchableActivity" />
+            -->
+        </activity>
+
+        <!-- 声明Activity中intent-filter中action属性是创建快捷方式的需要 -->
+        <!--
+		<activity	android:name="com.gionee.note.FolderNotesActivity"
+		      android:screenOrientation="portrait">
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+		</activity>
+        -->
+        <activity
+            android:name="com.gionee.note.NoteActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.note.ALLEditActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!--
+		<activity	android:name="com.gionee.note.MoveToFolderActivity"
+		      android:screenOrientation="portrait"/>
+		<activity	android:name="com.gionee.note.DeleteRecordsActivity"
+		      android:screenOrientation="portrait"/>
+		<activity	android:name="com.gionee.note.MoveOutOfFolderActivity"
+		      android:screenOrientation="portrait"/>
+        -->
+        <activity
+            android:name="com.gionee.note.GuideGalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gionee.note.ImportExportActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  />
+        <activity
+            android:name="com.gionee.note.ExportTypeSelectActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  />
+        <activity
+            android:name="com.gionee.note.ImportTypeSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gionee.note.ExportItemSelectActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  />
+        <activity
+            android:name="com.gionee.note.ImportItemSelectActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  />
+        <activity
+            android:name="com.gionee.note.SearchNoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" 
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <!-- hxc add for location start -->
+        <activity
+            android:name="com.gionee.note.noteMedia.location.GnLocationDialog"
+            android:label="@string/gn_location_tip_title"
+            android:theme="@amigo:style/Theme.Amigo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.gionee.note.noteMedia.location.GnSelectPoiActivity"
+            android:screenOrientation="portrait" />
+        <!--Gionee <wangpan><2014-03-03> modify for CR01035175 begin  -->
+        <activity
+            android:name="com.gionee.note.noteMedia.RemindActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@amigo:style/Theme.Amigo.Light.Dialog" >
+        </activity>
+        <!--Gionee <wangpan><2014-03-03> modify for CR01035175 end  -->
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.gionee.note.noteMedia.RecorderService" />
+
+        <!-- hxc add for location end -->
+
+
+        <!-- 有关Widget的声明 -->
+        <receiver
+            android:name="com.gionee.note.widget.NoteWidgetProvider_2x"
+            android:label="@string/app_widget2x2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2x_info" />
+        </receiver>
+        <receiver
+            android:name="com.gionee.note.widget.NoteWidgetProvider_4x"
+            android:label="@string/app_widget4x4" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x_info" />
+        </receiver>
+
+        <!-- 有关搜索的声明 -->
+        <!--
+		<activity android:name="com.gionee.note.NotesSearchableActivity"   
+		android:screenOrientation="portrait">     
+           <intent-filter>           
+				<action android:name="android.intent.action.SEARCH"></action>     
+           </intent-filter> 　
+           <meta-data android:name="android.app.searchable" 
+           android:resource="@xml/searchable"/> 
+       </activity> 
+        -->
+        <provider
+            android:name="com.gionee.note.provider.NotesProvider"
+            android:authorities="com.gionee.provider.notes" />
+        <!--
+        <meta-data android:name="android.app.default_searchable" 
+        android:value=".NotesSearchableActivity" />
+        -->
+        <!-- note alarm receiver -->
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.gionee.alarmset" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- gn lilg 2013-02-01 modify for location begin -->
+       	<!-- gn lilg 2013-01-07 add for location begin -->
+       	<!--  
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.3" >
+                </action>
+            </intent-filter>
+        </service>
+        -->
+        <!-- gn lilg 2013-01-07 add for location end -->
+        <!-- gn lilg 2013-02-01 modify for location end -->
+        
+        <!-- Gionee <lilg><2013-04-10> add for note upgrade begin -->
+        <receiver android:name=".UpdateReceiver">
+            <intent-filter>
+                <action android:name="com.gionee.note.action_appupgrade_check_update_result"/>
+                <category android:name="com.gionee.appupgrade"/>
+            </intent-filter>
+        </receiver>
+        <!-- Gionee <lilg><2013-04-10> add for note upgrade end -->
+        
+        <!-- Gionee <lilg><2014-09-30> add for CR01361641 begin -->
+        <meta-data android:name="AmigoAlarmAlignPermissioin" android:value="B1267B112ECC00DAABE9AE777BEC0F7E89047DEE2297F0814D3DB633B514E0CF"></meta-data>
+        <!-- Gionee <lilg><2014-09-30> add for CR01361641 end -->
+        
+    </application>
+
+</manifest>

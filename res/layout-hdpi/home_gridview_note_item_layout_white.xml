@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_note_griditem_layout"
+    android:paddingTop="8dp"
+    android:paddingStart="8dp"
+    android:layout_width="@dimen/gridview_item_width"
+    android:layout_height="@dimen/gridview_item_height" >
+
+    <RelativeLayout
+        android:id="@+id/home_note_griditem_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridview_item_title_height"
+        android:layout_alignParentTop="true" >
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_note_griditem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="19dp"
+ 		    android:textColor="@color/note_title"
+           android:textSize="@dimen/sub_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_note_griditem_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridview_item_content_height"
+        android:layout_below="@id/home_note_griditem_title_layout" >
+    <RelativeLayout
+         android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_note_griditem_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="6dp"
+            android:focusable="false"
+		    android:textColor="@color/note_title"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/middle_title_text_size" />
+
+        <ImageView
+            android:id="@+id/home_note_gridview_alarm_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/gn_alarm_small" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

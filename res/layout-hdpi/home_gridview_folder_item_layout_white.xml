@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_folder_griditem_layout"
+    android:layout_width="@dimen/gridview_item_width"
+    android:layout_height="@dimen/gridview_item_height" 
+    android:paddingTop="8dp"
+    android:paddingStart="8dp">
+
+    <RelativeLayout
+        android:id="@+id/home_folder_griditem_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridview_item_title_height"
+        android:layout_alignParentTop="true" >
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_folder_griditem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="19dp"
+			  android:textColor="@color/note_title"
+            android:textSize="@dimen/sub_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_folder__griditem_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridview_item_content_height"
+        android:layout_below="@id/home_folder_griditem_title_layout" >
+
+        <!-- gionee 20121225 jiating modify for theme end -->
+    <RelativeLayout
+         android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_folder_griditem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="6dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+		     android:textColor="@color/note_title"
+            android:textSize="@dimen/middle_title_text_size" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_foler_griditem_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/home_folder_griditem_title"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+		     android:textColor="@color/note_title"
+            android:textSize="@dimen/middle_title_text_size" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

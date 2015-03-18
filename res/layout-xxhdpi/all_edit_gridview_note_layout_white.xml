@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gridview_item_width"
+    android:layout_height="@dimen/gridview_item_height"
+    android:paddingTop="8dp">
+
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 begin-->
+    <RelativeLayout
+        android:id="@+id/all_edit_gridview_note_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/all_edit_gridview_note_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gridview_item_title_height"
+            android:layout_alignParentTop="true"
+            android:focusable="false" >
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/all_edit_gridview_note_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="19dp"
+				android:textColor="@color/note_title"
+                android:textSize="@dimen/sub_title_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_edit_gridview_note_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gridview_item_content_height"
+            android:layout_below="@id/all_edit_gridview_note_title_layout"
+            android:focusable="false" >
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/all_edit_gridview_note_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="6dp"
+                android:focusable="false"
+				android:textColor="@color/note_title"
+                android:textSize="@dimen/middle_title_text_size" />
+        <!--Gionee <wangpan><2014-02-19> modify for CR01066766 begin  -->
+
+            <CheckBox
+                android:id="@+id/all_edit_gridview_note_seleect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <!-- Gionee <wangpan><2014-02-19> modify for CR01066766 end -->
+
+            <ImageView
+                android:id="@+id/all_edit_gridview_alarm_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="17dp"
+                android:layout_toEndOf="@id/all_edit_gridview_note_seleect"
+                android:background="@drawable/gn_alarm_small" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 end-->
+
+    <!-- Gionee <wangpan><2014-05-19> modify for CR01267280 begin-->
+    <ImageView
+        android:id="@+id/grey_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_grid_grey_white" />
+    <!-- Gionee <wangpan><2014-05-19> modify for CR01267280 end-->
+
+</FrameLayout>

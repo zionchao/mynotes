@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gn_background_holo_light"
+    android:orientation="vertical" >
+
+    <!-- Gionee <wangpan><2014-05-15> modify for CR01249465 begin -->
+
+    <GridView
+        android:id="@+id/all_edit_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="8dp"
+        android:listSelector="#00000000"
+        android:numColumns="2"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:stretchMode="columnWidth"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <amigo.widget.AmigoListView
+        android:id="@+id/all_edit_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:listSelector="#00FFFFFF"
+        android:paddingBottom="5dp"
+        android:paddingStart="@dimen/listview_margin_left_right"
+        android:paddingEnd="@dimen/listview_margin_left_right"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone" />
+    <!-- Gionee <wangpan><2014-05-15> modify for CR01249465 end -->
+
+</LinearLayout>

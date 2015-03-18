@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 显示记录时ListView中每一行的布局方式 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_note_listview_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp"
+    android:paddingBottom="@dimen/listview_margin_bottom"
+    android:paddingTop="@dimen/listview_margin_top">
+
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 begin-->
+    <RelativeLayout
+        android:id="@+id/home_note_listview_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <RelativeLayout
+         android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_note_listview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:paddingTop="8dp"
+		    android:textColor="@color/note_title"
+            android:textSize="@dimen/medium_text_size" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/home_note_listview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_note_listview_content"
+            android:paddingBottom="8dp"
+		    android:textColor="@color/note_title"
+            android:textSize="@dimen/small_text_size" />
+        <!-- Gionee <pengwei><2013-11-12> modify for CR00948891 begin -->
+
+        <ImageView
+            android:id="@+id/home_note_listview_alarm_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gn_alarm_small" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <!-- Gionee <pengwei><2013-11-12> modify for CR00948891 end -->
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 end-->
+</RelativeLayout>

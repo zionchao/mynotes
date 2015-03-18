@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:layout_width="fill_parent"
+    Android:layout_height="fill_parent" 
+    >
+
+    <LinearLayout
+        Android:layout_width="fill_parent"
+        Android:layout_height="fill_parent"
+        Android:orientation="vertical"
+        Android:layout_above="@+id/rlCheckBox" >
+         <!--gionee hanyong 20120608 change padding* = 10dip -->
+        <ScrollView
+            Android:layout_width="fill_parent"
+            Android:paddingLeft="10dip"
+            Android:paddingRight="10dip"
+            Android:paddingTop="8dip"
+            Android:layout_height="wrap_content" >
+
+            <LinearLayout
+                Android:layout_marginTop="10dip"
+                Android:layout_width="fill_parent"
+                Android:layout_height="wrap_content" 
+                Android:orientation="vertical"
+                >
+
+                <amigo.widget.AmigoTextView
+                    Android:id="@+id/now_version"    
+		    Android:layout_width="wrap_content"
+		    Android:layout_height="wrap_content" 
+                    Android:lineSpacingExtra="6dip"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        Android:id="@+id/rlCheckBox"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content"
+        Android:clickable="true"
+        Android:layout_marginLeft="10dip"
+        Android:layout_alignParentBottom="true"
+        >
+
+        <CheckBox
+            Android:id="@+id/CheckBox"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:layout_alignParentLeft="true"
+            Android:layout_centerVertical="true"
+            Android:clickable="false"
+            />
+
+        <amigo.widget.AmigoTextView
+            Android:id="@+id/nodisplay"
+            Android:layout_width="fill_parent"
+            Android:layout_height="wrap_content" 
+            Android:layout_centerVertical="true"
+            Android:layout_toRightOf="@+id/CheckBox"
+            Android:text="@string/no_display_this_version" />
+    </RelativeLayout>
+</RelativeLayout>

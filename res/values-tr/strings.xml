@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义我们用的字符串变量,这样比固化到程序中灵活性更高 -->
+<resources>
+
+    <string name="hello">Hoşgeldiniz</string>  
+    <string name="app_name">Notlar</string>  
+    <!-- 比较通用的字段 -->
+    <string name="new_note">Not ekle</string>  
+    <string name="edit_note">Not düzenle</string>  
+    <string name="delete">Sil</string>  
+    <string name="move">taşı</string>  
+    <string name="delete_note">Bu notu silmek istediğinizden emin misiniz?</string>  
+    <string name="add_shortcut_to_home">Ana ekrana ekle</string>  
+    <!-- 主界面的菜单 -->
+    <string name="new_folder">Yeni Klasör</string>  
+    <string name="move_to_folder">Klasöre taşı</string>  
+    <string name="backup_data">Veri hazırla</string>  
+    <string name="set_password">Şifre koy</string>  
+    <string name="about">Hakkında</string>  
+    <string name="search">Ara</string>  
+    <string name="all_operate">Tümü düzenle</string>  
+    <!-- 文件夹界面下的菜单 -->
+    <string name="edit_folder_title">Klasör adını değiştir</string>  
+    <string name="move_out_of_folder">Klasörden taşı</string>  
+    <!-- 便签界面下的菜单 -->
+    <string name="alarm_time">Alarm Ayarla</string>  
+    <string name="change_font_size">Yazı tipi boyutu</string>  
+    <string name="menu_list_mode">Kontrol listesine gir</string>  
+    <string name="menu_normal_mode">Kontrol listesinden çık</string>  
+    <string name="share_sms_or_email">Paylaş</string>  
+    <string name="share">Paylaş</string>  
+    <string name="share_with_sms">SMS</string>  
+    <string name="share_with_email">Eposta</string>  
+    <string name="share_with_bluetooth">Bluetooth</string>  
+    <string name="share_with_more">Daha fazla</string>  
+    <!-- Dialog中使用到的字符串 -->
+
+
+    <!-- Button组件显示 的字符串 -->
+    <string name="Ok">Tamam</string>  
+    <string name="Cancel">İptal</string>  
+    <!-- 输出TXT文本需要用到的字符串 -->
+
+
+    <!-- 备份数据(XML文件)失败时用到的字符串 -->
+    <string name="backupDataFailed">Veri yedekleme başarısız !</string>  
+    <string name="backupDataSuc">Veri yedekleme başarılı !</string>  
+    <!-- 密码相关 -->
+    <string name="change_password">Şifre değiştir</string>  
+    <string name="clear_password">Şifre boş</string>  
+    <!-- 从SDCard还原 -->
+    <string name="restoreDataFailed">Veri geri yükleme başarısız !</string>  
+    <string name="restoreDataSuc">Veri geri yükleme başarılı !</string>  
+    <!-- widget中使用的字符串 -->
+    <string name="empty_view_text">Bu boş görünümdür</string>  
+    <string name="widget_stackview_name">Not</string>  
+    <string name="app_widget2x2">Notlar 2x2</string>  
+    <string name="app_widget4x4">Notlar 4x4</string>  
+    <string name="widget_click_add_note">Not eklemek için tıklayın</string>  
+    <string name="note_attachment">Haciz</string>
+    <string name="clearall">Silmek istediğinizden emin misiniz?</string>  
+    <string name="gn_deletenotepad">Bu not silinecek</string>  
+    <string name="notepadyes">Evet</string>  
+    <string name="notepadcancel">Hayır</string>  
+    <string name="note_link_tel">Ara</string>  
+    <string name="note_link_email">Eposta gönder</string>  
+    <string name="note_link_web">"Web'de gezin"</string>  
+    <string name="note_link_other">Harita aç</string>  
+    <!-- 搜索框中使用的字符串 -->
+    <string name="search_label">Arama</string>  
+    <string name="search_hint">Lütfen girin</string>  
+
+    <plurals name="search_results">
+        <item quantity="one">\"%2$s\" için %1$d sonuç :</item>  
+        <item quantity="other">\"%2$s\" için %1$d sonuç :</item> 
+    </plurals>
+
+    <string name="no_results">\"%s\" için sonuç bulunamadı</string>  
+    <string name="select_listview_mode">Liste Görünüm</string>  
+    <string name="select_gridview_mode">Izgara Görünüm</string>  
+    <string name="inport_export">İçe aktar/Dışa aktar</string>  
+    <string name="home_title">Not</string>  
+    <string name="all_secect">Tümünü seç</string>  
+    <string name="all_no_select">Tüm seçimi kaldır</string>  
+    <string name="select_count">%1$s seçili</string>  
+    <string name="delete_note_dialog_title">Sil</string>  
+    <string name="delete_note_dialog_body">Seçili notu silmek istediğinizden emin misiniz?</string>  
+    <string name="delete_note_dialog_sure">Tamam</string>  
+    <string name="delete_note_dialog_cancle">İptal</string>  
+    <string name="no_note_folder">Not Yok</string>  
+    <string name="folder_title_name">Klasör</string>  
+    <string name="note_new_title_label">Başlık Gir</string>  
+    <string name="folder_title_empty_alert">Başlık girdisi boş!</string>  
+    <string name="note_change_bgcolor">Arkaplanı değiştir</string>  
+    <string name="note_delete_note_dialog_body">Seçili notu silmek istediğinizden emin misiniz?</string>  
+    <string name="no_search_result">Eşleşme bulunamadı</string>  
+    <string name="hint_search_note">Notları veya klasörleri ara</string>  
+    <string name="note_title_max_length">60 karaktere kadar başlık girişi yapın</string>  
+    <string name="folder_title_max_length">60 karaktere kadar klasör adı girin</string>  
+    <string name="share_no_note_infolder_toast">Boş klasör veya boş not paylaşılamıyor</string>  
+    <string name="share_note_count_toast">Share can not be more than 10</string>
+    <string name="share_note_empty_toast">Text to Share</string>
+    <string name="all_delete_dialog_message">Çalışıyor, lütfen bekleyin.</string>  
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+    <string name="note_content_max_length">5000 karaktere kadar içerik girin</string>  
+    <string name="note_safe_mode">Misafir modunda not içeriği görünmezdir.</string>  
+    <string name="empty_note_not_send_luncher_toast">Boş not paylaşılamıyor</string>
+    <!-- gn lilg 20120721 add for export start -->
+    <string name="file_path_internalmemory">dışa aktar</string>  
+    <string name="file_name_txt_format">%s.txt</string>  
+    <string name="format_date_ymd">yyyyMMdd</string>
+    <string name="format_date_ymdhms">yyyy-MM-dd_HHmmss</string>
+    <string name="format_date_yyyymmdd">yyyy.MM.dd HH:mm</string>
+    <string name="str_defaultRecordExportTime">Dışa aktarma kaydı yok</string>  
+    <string name="str_defaultRecordImportTime">İçe aktarma kaydı yok</string>  
+    <string name="str_preRecordExportTime">Son dışa aktarma zamanı:</string>  
+    <string name="str_preRecordImportTime">Son içe aktarma zamanı:</string>  
+    <string name="str_importExport">Notları içe/dışa aktar</string>  
+    <string name="str_import_note">Notları içe aktar</string>  
+    <string name="str_export_note">Notları dışa aktar</string>  
+    <string name="str_next">Sonraki</string>  
+    <string name="str_sdcard">SD Kart</string>  
+    <string name="str_internal_memory">Dahili Depolama</string>  
+    <string name="str_all_select">Tümünü seç</string>  
+    <string name="str_no_select">Tüm seçimi kaldır</string>  
+    <string name="str_import">İçe aktar</string>  
+    <string name="str_export">Dışa aktar</string>  
+    <string name="str_export_confirm">Dışa aktarmayı onayla</string>  
+    <string name="str_export_msg">Seçili notları dışa aktarmak istediğinize emin misiniz?</string>  
+    <string name="export_error_title">Dışa aktarma başarısız</string>  
+    <string name="export_error_message_sdcard">Dışa aktarma başarısız, lütfen SD kartı kontrol edin</string>  
+    <string name="export_error_message_internal_memory">Dışa aktarma başarısız, lütfen Dahili Depolamayı kontrol edin</string>  
+    <string name="toast_import_no_data">Not içe aktarılamaz</string>  
+    <string name="import_note_message_sd">Notlar içe aktarılıyor"/SD kart</string>  
+    <string name="import_note_message_internal">Notlar içe aktarılıyor"dahili depolama</string>  
+    <string name="import_note_progress_message_first">"\n\nİçe aktarılıyor</string>  
+    <string name="import_note_progress_message_next">notlar(toplam</string>  
+    <string name="import_note_progress_message_end">)</string>  
+    <string name="import_note_progress_message_title">Notlar içe aktarılıyor</string>  
+    <string name="import_note_progress_message_content">"\n\nİlk not içe aktarılıyor (toplam</string>  
+    <string name="import_note_dialog_message_content">İçeri aktarmayı iptal etmek istediğinizden emin misiniz？</string>  
+    <string name="import_note_no_sd">SD kart kullanılamaz.</string>  
+    <string name="import_note_storage_unavailable">Storage is unavailable</string>
+    <string name="import_note_no_internal">Telefon depolaması kullanılamaz.</string>  
+    <string name="promat">İleti</string>  
+    <string name="toast_export_no_data">Mevcut notlar dışa aktarılamıyor</string>  
+    <string name="export_note_dialog_message_first">"/SD kart</string>  
+    <string name="export_note_dialog_message_next">klasörü"</string>  
+    <string name="export_note_dialog_message_next_next">"dahili Depolama</string>  
+    <string name="export_note_dialog_message_end">klasörü"</string>  
+    <string name="export_note_dialog_message_end_end">？</string>  
+    <string name="export_note_message_sd">Notlar dışa aktarılıyor "SD kart %1$s%2$s "</string>  
+    <string name="export_note_message_internal">Notlar dışa aktarılıyor "dahili Depolama %1$s%2$s "</string>  
+    <string name="export_note_progress_message_first">\n\n %1$s not dışa aktarılıyor(toplam %2$s )</string>  
+    <string name="export_note_progress_message_title">notlar dışa aktarılıyor</string>  
+    <string name="check_sd_content">"Lütfen SD karttaki boş alanın 1M'dan çok olduğunu kontrol edin."</string>  
+    <string name="check_internal_content">"Lütfen dahili depolamadaki boş alanın 1M'dan çok olduğunu kontrol edin."</string>  
+    <!-- gn lilg 20120721 add for export start -->
+
+
+    <!-- gn lilg 20120831 add for note alarm start -->
+    <string name="datetime_dialog_ok">Ayarla</string>  
+    <string name="datetime_dialog_cancel">İptal</string>  
+    <!-- gn lilg 20120831 add for note alarm end -->
+    <string name="date_time_set">Ayarla</string>  
+    <string name="cancel">İptal</string>  
+    <string name="gn_dialog_title">Zaman ayarı</string>  
+    <string name="gn_time_early">Ayarlanan saat mevcut saatten daha erken olamaz</string>  
+
+    <!-- gn lilg 20120831 add for CR00693893 start -->
+    <string name="data_loading">veri yükleniyor…</string>  
+    <!-- gn lilg 20120831 add for CR00693893 end -->
+
+    <string name="location">Coğrafik konum</string>  
+    <string name="other_location">İlgi alanı</string>  
+    <string name="gn_location_nonet">Bağlantı mevcut değil, lütfen bağlantıyı ayarlayın！</string>  
+    <string name="gn_location_loading">Yükleniyor… lütfen bekleyin</string>  
+    <string name="gn_location_nogps_tip">GPS açık değil, açık GPS daha hassas olacaktır</string>  
+    <string name="gn_location_tip_title">GPRS ipucu</string>  
+    <string name="gn_location_tip_body">Şu anda çevrimiçi şebekeyi kullanıyorsunuz, çalışmaya devam etmek ücrete tabi olabilecek HTTP trafik ücretine sebep olabilir, bu ücretler için yere operatörlerinize danışın.</string>  
+    <string name="gn_location_without_tip">Tekrar sorma</string>  
+    <string name="gn_location_know_it">Öğren</string>  
+    <string name="gn_location_others_poi">İlgi alanı</string>  
+    <string name="gn_location_error">Üzgünüm, konumunuz yüklenemedi.</string>  
+    <string name="gn_location_no_setting">Please access the location information to open a network location information</string>
+    <string name="gn_location_no_others_poi">İlgi alanı bulunmamaktadır</string>  
+    <string name="alarm">Alarm şuanki zamandan daha önceki bir tarihe ayarlandı, Alarm hatası...</string>  
+    <string name="geolocation">Konum</string>  
+    <string name="check">Kontrol</string>  
+    <string name="close">Kapat</string>  
+    <string name="more">Daha fazla</string>  
+    <string name="modify">Değiştir</string>  
+    <string name="alarm_modify">Değiştir</string>  
+    <string name="note_recording">录音</string>
+    <string name="notification_recording">正在录音...</string>
+    <string name="notification_stopped">录音已终止</string>
+    <string name="notification_warning">存储空间不足(小于%d分钟)</string>
+    <string name="note_send_luncher">Masaüstüne gönder</string>  
+    <string name="note_not_send_luncher_toast">Boş not masaüstüne gönderilemez</string>  
+    <string name="note_send_luncher_failed_noscence_toast">Hata, masaüstünde yeterli yer yok</string>  
+    <string name="note_send_luncher_success_toast">Masaüstünde zaten eklenmiş</string>  
+    <string name="note_send_luncher_haved_toast">Not masaüstünde zaten var</string>  
+    <string name="note_send_luncher_failed_toast">Masaüstüne gönderme hatası</string>  
+    <string name="note_not_support_send_luncher">Mevcut masaüstü gönderme işlevini desteklemiyor</string>  
+    <!-- 关于页面  GN pengwei 2012-11-27 add begin -->
+    <string name="about_mode">Not hakkında</string>  
+    <string name="about_title">Not</string>  
+    <string name="about_version">Sürüm:</string>  
+    <string name="about_new_function">Yeni fonksiyon:</string>
+    <string name="about_add_position">Yeni kaydırma efekti notunu gör</string>
+    <string name="about_add_alarm">Toplam yükleme hızını optimize et</string>
+    <string name="about_add_iexport">Yeni Kayıt fonksiyonu</string>
+    <string name="about_add_widget">Uyarı optimizasyonu</string>
+    <string name="about_record">优化桌面widget支持</string>
+    <string name="about_copyright">communication equipment co., LTD. All rights reserved</string>
+    <string name="about_update">Versiyon güncelleme</string>
+    <!-- update -->
+    <string name="confirm_install_hint">Kurulum ipucu</string>  
+    <string name="upgrade_title">Elite not yükseltme</string>  
+    <string name="donot_download">geçici olarak kurmamak için</string>  
+    <string name="download_now">hemen kurulum</string>  
+    <string name="force">Bu sürüm sadece yükseltmeden sonra kullanılabilir, eğer yükseltmezseniz istemcinin kullanılamamasına yol açabilir.</string>  
+    <string name="new_down_desc1">sıcak ipucu:</string>  
+    <string name="new_down_desc2">kayıt kullanımının bir sürümünü kaydedecektir.</string>  
+    <string name="new_down_desc3">Yükseltilmiş kullanım daha hızlıdır, WIFI kullanımı önerilir.</string>  
+    <string name="now_version">Mevcut sürüm:</string>  
+    <string name="new_version">En son sürüm:</string>  
+    <string name="new_feature_desc">Geliştirme bilgisi:</string>  
+    <string name="file_size">Boyut</string>  
+    <string name="no_display_this_version">Bu sürüm ipucu değildir.</string>  
+    <string name="pay_show_title">İleti</string>  
+    <string name="message_update_error">Sürüm güncelleme hatası, lütfen şebekeyi ve hafıza kartının güncelleme için yeterli yeri olduğunu kontrol edin!</string>  
+    <string name="download_retry">Güncellemek için</string>  
+    <string name="message_network_error">Şebeke arızası, şebekeyi kontrol edip yeniden deneyin!</string>  
+    <string name="message_update_error_nospace">Hafıza depolama alanı yetersiz, güncelleme işlemi tamamlanamıyor, lütfen hafıza kartını kontrol edip yeniden deneyin!</string>  
+    <string name="message_update_error_nosdcard">Hafıza kartı bulunamadı, güncelleme işlemi tamamlanamıyor, lütfen hafıza kartını kontrol edip yeniden deneyin!</string>  
+    <string name="message_update_apk">Elite not yükseltiliyor</string>  
+    <string name="message_update_check">Yapılandırma öğeleri kontrol ediliyor</string>  
+    <!-- update -->
+    <!-- 关于页面  GN pengwei 2012-11-27 add end -->
+    <!-- gionee 20121204 jiating modify for CR00739261 begin -->
+    <string name="gn_importnote_complete">便签导入已完成</string>
+    <string name="gn_exportnote_complete">便签导出已完成</string>
+    <!-- gionee 20121204 jiating modify for CR00739261 end -->
+    <string name="gn_about_no_need_update">En son sürüm, güncellemeye gerek yok</string>  
+    <string name="note_alarm_failure">Alarm saati mevcut saatten daha erken, alarm başarısız.</string>  
+    <string name="alarm_today">Bugün</string>  
+    
+    <!-- gionee lilg 20130111 add for default note begin -->
+    <string name="default_note_title">Not kullanımına hoşgeldiniz!</string>  
+    <string name="default_note_content">Not kullanımına hoşgeldiniz!\n\tUygulamadan veya masaüstü widget ile kolay şekilde notlar oluşturabilirsiniz;\n\tNota fikirlerinizi veya yapılacaklar listesini yazabilir, hatırlatıcı bilgiler girebilirsiniz;\n\tNot aynı zamanda notların arkaplanını ayarlamak, klasörler oluşturmak, içe ve dışa aktarmak, masaüstüne göndermek gibi pek çok pratik işleve sahiptir!</string>  
+    <!-- gionee lilg 20130111 add for default note end -->
+    
+    <!-- gionee lilg 20130220 add for note media begin -->
+    <string name="message_media_recorder_start_error">Medya kaydedici başlatılamadı!</string>
+    <string name="message_media_player_start_error">Medya kaydedici başlatılamadı!</string>
+    <string name="message_media_recorder_is_recording">Kayıt sürüyor, dosya yürütülemez.</string>
+    <string name="message_media_player_file_not_exists">Dosya mevcut değil</string>
+    <string name="no_title">Başlık yok!</string>
+    <string name="home_load_datas_error">Normal olmayan veriler, program kapatılacak</string>
+    <!-- gionee lilg 20130220 add for note media end -->
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export begin -->
+    <string name="export_alert_exporting">dışa aktarılıyor</string>
+    <string name="import_alert_importing">içe aktarılıyor</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export end -->
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record begin -->
+    <string name="message_media_record_num_max">kayıt sayısı maksimum 5 olmalıdır</string>
+    <string name="message_media_record_time_max">kayıt süresi maksimum limite ulaştı, kayıt durduruluyor</string>
+    <string name="message_sdcard_internal_memory_both_not_ok">SD kart ve dahili hafıza ulaşılabilir değil, kaydedilemiyor</string>
+    <string name="message_sdcard_internal_memory_both_not_exists_or_unavailable">Hafızaya ulaşılamıyor, kaydedilemiyor</string>
+    <string name="message_sdcard_internal_memory_both_storage_is_full">Hafıza dolu, kaydedilemiyor</string>
+    <string name="message_sdcard_not_ok">SD kart mevcut değil veya ulaşılamıyor</string>
+    <string name="message_internal_memory_not_ok">Dahili hafıza mevcut değil veya ulaşılamıyor</string>
+    <string name="message_media_record_add_fail">Kaydetme yolu hatası, bu notlara medya eklenemez</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record end -->
+    
+    <!-- Gionee <lilg><20130416> add for note batch operate begin -->
+    <string name="message_batch_delete">toplu silme</string>
+    <string name="message_batch_move">toplu taşıma</string>
+    <!-- Gionee <lilg><20130416> add for note batch operate end -->
+    
+    <string name="note_detail_menu">Menü</string>
+</resources>

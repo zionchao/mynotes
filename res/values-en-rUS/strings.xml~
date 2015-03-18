@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义我们用的字符串变量,这样比固化到程序中灵活性更高 -->
+<resources>
+
+    <string name="hello">Welcome</string>
+    <string name="app_name">Notes</string>
+    <!-- 比较通用的字段 -->
+    <string name="new_note">New</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="delete">Delete</string>
+    <string name="move">Move</string>
+    <string name="delete_note">Are you sure to delete Note?</string>
+    <string name="add_shortcut_to_home">Add to desktop</string>
+    <!-- 主界面的菜单 -->
+    <string name="new_folder">New Folder</string>
+    <string name="move_to_folder">Move to folder</string>
+    <string name="backup_data">Backup data</string>
+    <string name="set_password">Set password</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
+    <string name="all_operate">Edit all</string>
+    <!-- 文件夹界面下的菜单 -->
+    <string name="edit_folder_title">Edit folder name</string>
+    <string name="move_out_of_folder">Move from folder</string>
+    <!-- 便签界面下的菜单 -->
+    <string name="alarm_time">Set Alarm</string>
+    <string name="change_font_size">Font size</string>
+    <string name="menu_list_mode">Enter check list</string>
+    <string name="menu_normal_mode">Exit check list</string>
+    <string name="share_sms_or_email">Share</string>
+    <string name="share">Share</string>
+    <string name="share_with_sms">SMS</string>
+    <string name="share_with_email">Email</string>
+    <string name="share_with_bluetooth">Bluetooth</string>
+    <string name="share_with_more">Share more</string>
+    <!-- Dialog中使用到的字符串 -->
+
+
+    <!-- Button组件显示 的字符串 -->
+    <!-- Gionee <wanghaiyan><2015-01-29> modify for CR01443465 begin-->
+    <string name="Ok">OK</string>
+    <string name="Cancel">Cancel</string>
+    <!-- 输出TXT文本需要用到的字符串 -->
+
+
+    <!-- 备份数据(XML文件)失败时用到的字符串 -->
+    <string name="backupDataFailed">Backup data failed!</string>
+    <string name="backupDataSuc">Backup data success!</string>
+    <!-- 密码相关 -->
+    <string name="change_password">Change Password</string>
+    <string name="clear_password">Delete password</string>
+    <!-- 从SDCard还原 -->
+    <string name="restoreDataFailed">Restore data failed !</string>
+    <string name="restoreDataSuc">Restore data success !</string>
+    <!-- widget中使用的字符串 -->
+    <string name="empty_view_text">This is the empty view</string>
+    <string name="widget_stackview_name">Note</string>
+    <string name="app_widget2x2">Notes 2x2</string>
+    <string name="app_widget4x4">Notes 4x4</string>
+    <string name="widget_click_add_note">Click add note</string>
+    <string name="note_attachment">Attachment</string>
+    <string name="clearall">Delete?</string>
+    <string name="gn_deletenotepad">This Note will be deleted</string>
+    <string name="notepadyes">Yes</string>
+    <string name="notepadcancel">No</string>
+    <string name="note_link_tel">Call</string>
+    <string name="note_link_email">Send email</string>
+    <string name="note_link_web">Browse web</string>
+    <string name="note_link_other">Open map</string>
+    <!-- 搜索框中使用的字符串 -->
+    <string name="search_label">Search</string>
+    <string name="search_hint">Please input</string>
+
+    <plurals name="search_results">
+        <item quantity="one">%1$d result for \"%2$s\": </item>
+        <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+
+    <string name="no_results">No results found for \"%s\"</string>
+    <string name="select_listview_mode">List View</string>
+    <string name="select_gridview_mode"> Grid View</string>
+    <string name="inport_export">Import/Export</string>
+    <string name="home_title">Note</string>
+    <string name="all_secect">Select all</string>
+    <string name="all_no_select">Unselect all</string>
+    <!-- Gionee <wanghaiyan><2015-2-2> add for CR01443349 begin-->
+    <string name="select_count">%1$s Selected </string>
+    <!-- Gionee <wanghaiyan><2015-2-2> add for CR01443349 end-->
+    <string name="delete_note_dialog_title">Delete</string>
+    <string name="delete_note_dialog_body">Are you sure to delete the selected Note?</string>
+    <string name="delete_note_dialog_sure">Delete</string>
+    <string name="delete_note_dialog_cancle">Cancel</string>
+    <string name="no_note_folder">No Notes</string>
+    <string name="folder_title_name">Folder</string>
+    <string name="note_new_title_label">Input Title</string>
+    <string name="folder_title_empty_alert">The title should not be empty!</string>
+    <!-- Gionee <wangpan><2014-03-13> add for CR01102110 begin-->
+    <string name="folder_title_duplicate_alert">Failed to create the folder, the folder already exists</string>
+    <!-- Gionee <wangpan><2014-03-13> add for CR01102110 end-->
+    <string name="note_change_bgcolor">Change background</string>
+    <string name="note_delete_note_dialog_body">Are you sure to delete the selected Note?</string>
+    <string name="no_search_result">No matched</string>
+    <string name="hint_search_note">Search notes or folders</string>
+    <string name="note_title_max_length">Title enter up to 60</string>
+    <string name="folder_title_max_length">Folder name enter up to 60</string>
+    <string name="share_no_note_infolder_toast">Unable to share empty folder or empty note. </string>
+    <string name="share_note_count_toast">Share can not be more than 10</string>
+    <string name="share_note_empty_toast">Text to Share</string>
+    <string name="all_delete_dialog_message">Operating, please wait.</string>
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+    <string name="note_content_max_length">Content enter up to 5000</string>
+    <string name="note_safe_mode">Note content is invisible in guest mode.</string>
+
+    <!-- gn lilg 20120721 add for export start -->
+	<!-- Gionee <pengwei><20130615> modify for CR00818505 begin -->
+    <!-- Gionee <wangpan><20140222> modify for CR01070809 begin -->
+    <!-- Gionee <wangpan><20140222> modify for CR01070809 end -->
+    <!-- Gionee <pengwei><20130615> modify for CR00818505 end -->
+    <string name="file_path_internalmemory">export</string>
+    <string name="file_name_txt_format">%s.txt</string>
+    <string name="format_date_ymd">yyyyMMdd</string>
+    <string name="format_date_ymdhms">yyyy-MM-dd_HHmmss</string>
+    <string name="format_date_yyyymmdd">yyyy.MM.dd HH:mm</string>
+    <string name="str_defaultRecordExportTime">No export records</string>
+    <string name="str_defaultRecordImportTime">No import records</string>
+    <string name="str_preRecordExportTime">Last export time : </string>
+    <string name="str_preRecordImportTime">Last import time : </string>
+    <string name="str_importExport">Import/Export Notes</string>
+    <string name="str_import_note">Import Notes</string>
+    <string name="str_export_note">Export Notes</string>
+    <string name="str_next">Next</string>
+    <string name="str_sdcard">SD Card</string>
+    <string name="str_internal_memory">Phone Storage</string>
+    <string name="str_all_select">Select all</string>
+    <string name="str_no_select">Unselect all</string>
+    <string name="str_import">Import</string>
+    <string name="str_export">Export</string>
+    <string name="str_export_confirm">Confirm Export</string>
+    <string name="str_export_msg">Are you sure to export the selected notes to </string>
+    <string name="export_error_title">Export failed</string>
+    <string name="export_error_message_sdcard">Export failed, please check SD card.</string>
+    <string name="export_error_message_internal_memory">Export failed,please check Phone Storage.</string>
+    <string name="toast_import_no_data">No note can be imported</string>
+    <string name="import_note_message_sd">Importing notes"/SD card</string>
+    <string name="import_note_message_internal">Importing notes "Phone Storage</string>
+    <string name="import_note_progress_message_first">"\n\nImporting</string>
+    <string name="import_note_progress_message_next">notes(total</string>
+    <string name="import_note_progress_message_end">)</string>
+    <string name="import_note_progress_message_title">Importing notes</string>
+    <string name="import_note_progress_message_content">"\n\nImporting first note (total</string>
+    <string name="import_note_dialog_message_content">Are you sure to cancel import？</string>
+    <string name="import_note_no_sd">The SD card is unavailable.</string>
+    <string name="import_note_storage_unavailable">Storage is unavailable</string>
+    <string name="import_note_no_internal">The phone storage is unavailable.</string>
+    <string name="promat">Prompt</string>
+    <string name="toast_export_no_data">No exist note can be exported</string>
+    <string name="export_note_dialog_message_first">"/SD card</string>
+    <string name="export_note_dialog_message_next">folder"</string>
+    <string name="export_note_dialog_message_next_next">"Phone Storage </string>
+    <string name="export_note_dialog_message_end">folder"</string>
+    <string name="export_note_dialog_message_end_end">？</string>
+    <string name="export_note_message_sd">Exporting notes to "SD card %1$s%2$s "</string>
+    <string name="export_note_message_internal">Exporting notes to "Phone Storage %1$s%2$s "</string>
+    <string name="export_note_progress_message_first">\n\nExporting  %1$s  notes(total %2$s )</string>
+    <string name="export_note_progress_message_title">exporting notes</string>
+    <string name="check_sd_content">Please check SD card free space is more than 3M.</string>
+    <string name="check_internal_content">Please check Phone Storage free space if there is more than 3M.</string>
+
+    <!-- gn lilg 20120721 add for export start -->
+
+
+    <!-- gn lilg 20120831 add for note alarm start -->
+    <string name="datetime_dialog_ok">Set</string>
+    <string name="datetime_dialog_cancel">Cancel</string>
+<!-- gionee 20121218 jiating modify for CR00748511 begin -->
+    <string name="date_time_set">Set</string>
+    <string name="cancel">Cancel</string>
+    <string name="gn_dialog_title">Set the time</string>
+    <string name="gn_time_early">Setting the time cannot be earlier than the current time </string>
+<!-- gionee 20121218 jiating modify for CR00748511 end -->
+    <!-- gn lilg 20120831 add for note alarm end -->
+
+
+    <!-- gn lilg 20120831 add for CR00693893 start -->
+    <string name="data_loading">Data loading...</string>
+    <!-- gn lilg 20120831 add for CR00693893 end -->
+
+    <string name="location">Geographical position</string>
+    <string name="other_location">Point of interest</string>
+    <string name="gn_location_nonet">No connection avilable,set network please!</string>
+    <string name="gn_location_loading">Getting your location, please wait</string>
+    <string name="gn_location_nogps_tip">GPS doesnot open, open GPS will more accurate</string>
+    <string name="gn_location_tip_title">GPRS hint</string>
+    <string name="gn_location_tip_body">You are now using the online network, to continue the operation may produce data usage fee, specific costs please consult the local operators</string>
+    <string name="gn_location_without_tip">Donot ask again</string>
+    <string name="gn_location_know_it">Know it</string>
+    <string name="gn_location_others_poi">More position</string>
+    <string name="gn_location_error">Sorry,can not load your location </string>
+    <string name="gn_location_no_setting">Please access the location information to open the network location information</string>
+    <string name="gn_location_no_others_poi">No more position</string>
+    <string name="alarm">Alarm</string>
+    <string name="geolocation">Location</string>
+    <!-- Gionee <wangpan><2013-12-24> modify for CR00989324 begin -->
+    <string name="check">Check</string>
+    <!-- Gionee <wangpan><2013-12-24> modify for CR00989324 end -->
+    <string name="close">Close</string>
+    <string name="more">More</string>
+    <string name="modify">Modify</string>
+    <string name="alarm_modify">Modify</string>
+    <string name="note_send_luncher">Send to desktop </string>
+    <string name="note_not_send_luncher_toast">Empty note can not be sent to the desktop</string>
+    <string name="note_send_luncher_failed_noscence_toast">Failure, desktop without enough space</string>
+    <string name="note_send_luncher_success_toast">Has been added to the desktop</string>
+    <string name="note_send_luncher_haved_toast">Note already on the table</string>
+    <string name="note_send_luncher_failed_toast">Send to desktop failure</string>
+    <string name="note_not_support_send_luncher">The current desktop does not support sending to the desktop function, please install gionee desktop. </string>
+    <!-- 关于页面  GN pengwei 2012-11-27 add begin -->
+    <string name="about_mode">About Note</string>
+    <string name="about_title">Note</string>
+    <string name="about_version">Version:</string>
+    <string name="about_new_function">New function:</string>
+    <string name="about_add_position">See note new sliding effect</string>
+    <string name="about_add_alarm">Optimize the overall loading speed</string>
+    <string name="about_add_iexport">New recording function</string>
+    <string name="about_add_widget">Optimization of alerts</string>
+    <!-- Gionee <wangpan><2014-03-19> delete for CR01071390 begin -->
+    <!-- <string name="about_record">Optimize the desktop widget support</string> -->
+    <!-- Gionee <wangpan><2014-03-19> delete for CR01071390 end -->
+    <string name="about_copyright">Gionee communication equipment co., LTD. All rights reserved</string>
+    <string name="about_update">Firmware update</string>
+    <!-- 关于页面  GN pengwei 2012-11-27 add end -->
+
+
+    <!-- gionee 20121204 jiating modify for CR00739261 begin -->
+    <string name="gn_importnote_complete">Completed notes Importing work.</string>
+    <string name="gn_exportnote_complete">Completed notes Exporting work.</string>
+    <!-- gionee 20121204 jiating modify for CR00739261 end -->
+    <!-- update -->
+    <string name="confirm_install_hint">Installation hint</string>
+    <string name="upgrade_title">Gionee note upgrade</string>
+    <string name="donot_download">temporary not to install</string>
+    <string name="download_now">immediately installation</string>
+    <string name="force">This version only after the upgrade can use, if you do not upgrade may lead to the client can not use</string>
+    <string name="new_down_desc1">warm tip:</string>
+    <string name="new_down_desc2">will save a version of the use of record.</string>
+    <string name="new_down_desc3">Upgrade needs a lot of data usage, it is recommended to use WIFI.</string>
+    <string name="now_version">current version:</string>
+    <string name="new_version">the latest version:</string>
+    <string name="new_feature_desc">improvement information:</string>
+    <string name="file_size">size</string>
+    <string name="no_display_this_version">this version not tip.</string>
+    <string name="pay_show_title">prompt</string>
+    <string name="message_update_error">version update error, please confirm network is fine and  memory card has enough space to update!</string>
+    <string name="download_retry">to update</string>
+    <string name="message_network_error">network anomaly, please check the network connection and then try again!</string>
+    <string name="message_update_error_nospace">memory storage space is insufficient, unable to complete the update operation, please check the memory card and then try again!</string>
+    <string name="message_update_error_nosdcard">memory card does not exist, unable to complete the update operation, please check the memory card and then try again!</string>
+    <string name="message_update_apk">is gionee note upgrade</string>
+    <string name="message_update_check">is checking configuration items</string>
+
+    <!-- update -->
+    <string name="gn_about_no_need_update">Is the latest version, do not need to update</string>
+    <string name="note_alarm_failure">Alarm time less than the current time, alarm failure.</string>
+    <string name="alarm_today">Today</string>
+    
+    <!-- gionee lilg 20130111 add for default note begin -->
+    <string name="default_note_title">Welcome to use notes!</string>
+    <string name="default_note_content">Welcome to use notes!\n\tYou can feel free in a memo to record ideas, information or to-do list, and add the reminder information and the geographic location information;\n\tNote also provides many practical functions, such as adjusting background of notes, creating folders, import and export,  notes can help you live a better life!</string>
+    <!-- gionee lilg 20130111 add for default note end -->
+    <string name="note_recording">Record</string>
+    
+    <!-- gionee lilg 20130220 add for note media begin -->
+    <string name="message_media_recorder_start_error">start media recorder fail!</string>
+    <string name="message_media_player_start_error">start media player fail!</string>
+    <string name="message_media_recorder_is_recording">Being recorded,you can not play the file</string>
+    <string name="message_media_player_file_not_exists">The played file does not exist</string>
+    <!-- Gionee <wangpan><2014-03-21> modify for CR01126283 begin -->
+    <!-- Gionee <wangpan><2014-03-21> modify for CR01126283 end -->
+    <!-- gionee lilg 20130220 add for note media end -->
+    <string name="no_title">No Title!</string>
+    <string name="home_load_datas_error">Abnormal data for notes, the program will exit</string>
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export begin -->
+    <string name="export_alert_exporting">exporting now</string>
+    <string name="import_alert_importing">importing now</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export end -->
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record begin -->
+    <string name="message_media_record_num_max">the number of record can not exceed five</string>
+    <string name="message_media_record_time_max">the time of record is max, stop recording</string>
+    <string name="message_sdcard_internal_memory_both_not_ok">sdcard and internal memory both are not exists or unavailable</string>
+    <string name="message_sdcard_internal_memory_both_not_exists_or_unavailable">Storage is unavailable, Unable to add a recording</string>
+    <string name="message_sdcard_internal_memory_both_storage_is_full">Storage space is full,Unable to add a recording</string>
+    <string name="message_sdcard_not_ok">sdcard not exists or unavailable</string>
+    <string name="message_internal_memory_not_ok">internal memory not exists or unavailable</string>
+    <string name="message_media_record_add_fail">Storage path error, the notes can not add a recording</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record end -->
+    
+    <!-- Gionee <lilg><20130416> add for note batch operate begin -->
+    <string name="message_batch_delete">batch deleting</string>
+    <string name="message_batch_move">batch moving</string>
+    <!-- Gionee <lilg><20130416> add for note batch operate end -->
+    
+    <string name="empty_note_not_send_luncher_toast">Empty note do not share</string>
+    <string name="note_detail_menu">Menu</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <amigo.widget.AmigoTextView
+        android:id="@+id/location_tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:textSize="@dimen/medium_text_size"
+        android:paddingStart="6dip"
+        android:paddingEnd="0dip"
+        android:text="@string/gn_location_tip_body" />
+
+    <CheckBox
+        android:id="@+id/location_without_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gn_location_without_tip" >
+    </CheckBox>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:visibility="visible"
+            android:background="@color/orange"/>    
+        <amigo.widget.AmigoButton 
+            android:id="@+id/location_done"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+			android:textSize="@dimen/large_text_size"
+            android:text="@string/gn_location_know_it" />
+    </LinearLayout>
+
+</LinearLayout>

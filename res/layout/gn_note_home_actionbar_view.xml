@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+    <ImageButton
+        android:id="@+id/hidden_button_back"
+        android:layout_width="44dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/import_or_export_title_back_bg_white"
+        android:scaleType="center"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/actionbar_home_folder_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/hidden_button_back"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/hidden_button_back"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/actionBarItemBackground"
+        android:src="@drawable/amigo_ic_ab_back_light"
+        android:clickable="true"
+        android:paddingStart="0dp"
+	android:paddingEnd="0dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+       />
+   
+    <amigo.widget.AmigoTextView
+        android:id="@+id/actionbar_home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/gn_note_change_mode"
+        android:layout_marginStart="20dp"
+        android:background="?android:attr/actionBarItemBackground"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/home_title"
+        android:textSize="@dimen/actionbar_title_text_size"
+        style="@style/ActionBarTitleTextStyle" />
+    
+
+    <ImageButton
+        android:id="@+id/hidden_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/import_or_export_title_back_bg_white"
+        android:scaleType="center"
+        android:layout_toEndOf="@id/hidden_button_back"
+        android:visibility="invisible" />
+    <amigo.widget.AmigoTextView
+        android:id="@+id/actionbar_home_folder_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/hidden_button"
+        android:layout_alignTop="@id/hidden_button"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/actionbar_home_folder_back"
+        android:layout_toStartOf="@+id/gn_note_change_mode"
+        android:background="?android:attr/actionBarItemBackground"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/actionbar_title_text_size"
+        android:visibility="gone"
+        style="@style/ActionBarTitleTextStyle" />
+
+    <LinearLayout
+        android:id="@+id/gn_note_change_mode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageButton
+            android:id="@+id/gn_note_list_mode"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/gn_note_home_title_list"
+            android:gravity="center_vertical" 
+             >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/gn_note_grid_mode"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/gn_note_home_title_gridview"
+            android:gravity="center_vertical" >
+        </ImageButton>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

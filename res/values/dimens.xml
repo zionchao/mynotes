@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 定义一些用到的尺寸 -->
+<resources>
+    <dimen name="widget_margin">8dp</dimen>
+    
+    
+    <dimen name="title_back_to_left">4dp</dimen>
+    <dimen name="title_between_icon">16dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="sub_title_text_size">11sp</dimen>
+    <dimen name="middle_title_text_size">15sp</dimen>
+    <dimen name="big_title_text_size">20sp</dimen>
+    
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+    <!-- Gionee <wangpan> <2014-01-17> modify for CR01026273 begin -->
+    <dimen name="actionbar_title_text_size">18sp</dimen>
+    <!-- Gionee <wangpan> <2014-01-17> modify for CR01026273 end -->
+    <dimen name="import_export_main">16sp</dimen>
+    <dimen name="super_large_text_size">24sp</dimen>
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01066766 begin-->
+    <dimen name="home_no_note_text_size">16sp</dimen>
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01066766 end -->
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01186554 begin-->
+    <dimen name="folder_checkbox_margin_right">18dp</dimen>
+    <dimen name="note_checkbox_margin_right">18dp</dimen>
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01186554 end-->
+    <!-- Gionee <wangpan><2014-3-14> add for CR01111817 begin-->
+    <dimen name="listview_item_height">58dp</dimen>
+    <dimen name="listview_item_textsize">18sp</dimen>
+    <!-- Gionee <wangpan><2014-3-14> add for CR01111817 end-->
+    <!--Gionee <wangpan><2014-05-15> add for CR01249465 begin-->
+    <dimen name="listview_margin_left_right">8dp</dimen>
+    <dimen name="listview_margin_top_bottom">4dp</dimen>
+    <dimen name="listview_margin_top">8dp</dimen>
+    <dimen name="listview_margin_bottom">0dp</dimen>
+    <dimen name="gridview_item_width">138dp</dimen>
+    <dimen name="gridview_item_height">138dp</dimen>
+    <dimen name="gridview_item_title_height">40dp</dimen>
+    <dimen name="gridview_item_content_height">108dp</dimen>
+    <!--Gionee <wangpan><2014-05-15> add for CR01249465 begin-->
+</resources>

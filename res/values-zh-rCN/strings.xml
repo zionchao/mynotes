@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义我们用的字符串变量,这样比固化到程序中灵活性更高 -->
+<resources>
+
+    <string name="hello">Welcome</string>
+    <string name="app_name">便签</string>
+    <!-- 比较通用的字段 -->
+    <string name="new_note">新建</string>
+    <string name="edit_note">编辑便签</string>
+    <string name="delete">删除</string>
+    <string name="move">移动</string>
+    <string name="delete_note">确定删除便签?</string>
+    <string name="add_shortcut_to_home">添加到桌面</string>
+    <!-- 主界面的菜单 -->
+    <string name="new_folder">新建文件夹</string>
+    <string name="move_to_folder">移入文件夹</string>
+    <string name="backup_data">备份数据</string>
+    <string name="set_password">设置密码</string>
+    <string name="about">关于</string>
+    <string name="search">搜索</string>
+    <string name="all_operate">批量操作</string>
+    <!-- 文件夹界面下的菜单 -->
+    <string name="edit_folder_title">修改文件夹名称</string>
+    <string name="move_out_of_folder">移出文件夹</string>
+    <!-- 便签界面下的菜单 -->
+    <string name="alarm_time">设置闹钟</string>
+    <string name="change_font_size">字体大小</string>
+    <string name="menu_list_mode">进入清单模式</string>
+    <string name="menu_normal_mode">退出清单模式</string>
+    <string name="share_sms_or_email">分享</string>
+    <string name="share">分享</string>
+    <string name="share_with_sms">短信</string>
+    <string name="share_with_email">邮箱</string>
+    <string name="share_with_bluetooth">蓝牙</string>
+    <string name="share_with_more">更多分享</string>
+    <!-- Dialog中使用到的字符串 -->
+
+
+    <!-- Button组件显示 的字符串 -->
+    <string name="Ok">确定</string>
+    <string name="Cancel">取消</string>
+    <!-- 输出TXT文本需要用到的字符串 -->
+
+
+    <!-- 备份数据(XML文件)失败时用到的字符串 -->
+    <string name="backupDataFailed">备份数据失败!</string>
+    <string name="backupDataSuc">备份数据成功!</string>
+    <!-- 密码相关 -->
+    <string name="change_password">修改密码</string>
+    <string name="clear_password">清除密码</string>
+    <!-- 从SDCard还原 -->
+    <string name="restoreDataFailed">还原数据失败!</string>
+    <string name="restoreDataSuc">还原数据成功!</string>
+    <!-- widget中使用的字符串 -->
+    <string name="empty_view_text">This is the empty view</string>
+    <string name="widget_stackview_name">便签</string>
+    <string name="app_widget2x2">便签2x2</string>
+    <string name="app_widget4x4">便签4x4</string>
+    <string name="widget_click_add_note">点击添加便签</string>
+    <string name="note_attachment">附件</string>
+    <string name="clearall">删除?</string>
+    <string name="gn_deletenotepad">该记事本将被删除</string>
+    <string name="notepadyes">是</string>
+    <string name="notepadcancel">否</string>
+    <string name="note_link_tel">呼叫电话</string>
+    <string name="note_link_email">发送邮件</string>
+    <string name="note_link_web">浏览网页</string>
+    <string name="note_link_other">打开地图</string>
+    <!-- 搜索框中使用的字符串 -->
+    <string name="search_label">search</string>
+    <string name="search_hint">please input</string>
+
+    <plurals name="search_results">
+        <item quantity="one">%1$d result for \"%2$s\": </item>
+        <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+
+    <string name="no_results">No results found for \"%s\"</string>
+    <string name="select_listview_mode">列表查看</string>
+    <string name="select_gridview_mode"> 缩略图查看</string>
+    <string name="inport_export">导入导出</string>
+    <string name="home_title">便签</string>
+    <string name="all_secect">全部选择</string>
+    <string name="all_no_select">取消全选</string>
+    <string name="select_count">已选中 %1$s 个</string>
+    <string name="delete_note_dialog_title">删除</string>
+    <string name="delete_note_dialog_body">确定删除所选便签吗？</string>
+    <string name="delete_note_dialog_sure">删除</string>
+    <string name="delete_note_dialog_cancle">取消</string>
+    <string name="no_note_folder">没有便签</string>
+    <string name="folder_title_name">文件夹</string>
+    <string name="note_new_title_label">输入标题</string>
+    <string name="folder_title_empty_alert">输入标题不能为空!</string>
+    <!-- Gionee <wanghaiyan><2015-01-21> add for CR01428639 begin-->
+    <string name="folder_title_duplicate_alert">该文件夹已存在</string>
+    <!-- Gionee <wanghaiyan><2014-01-21> add for CR01428639 end-->
+    <string name="note_change_bgcolor">更改背景</string>
+    <string name="note_delete_note_dialog_body">您确认要删除该便签吗？</string>
+    <string name="no_search_result">没有匹配结果</string>
+    <string name="hint_search_note">搜索便签，文件夹</string>
+    <string name="note_title_max_length">标题最多输入60个字</string>
+    <string name="folder_title_max_length">文件夹名最多输入60个字</string>
+    <string name="share_no_note_infolder_toast">很抱歉，空文件夹或者空便签不能分享</string>
+    <string name="share_note_count_toast">分享数量不能超过10个</string>
+    <string name="share_note_empty_toast">需有文本内容才能分享</string>
+    <string name="all_delete_dialog_message">正在操作，请稍等</string>
+    <string name="time_am">上午</string>
+    <string name="time_pm">下午</string>
+    <string name="note_content_max_length">便签内容最多输入5000字</string>
+    <string name="note_safe_mode">访客模式下,便签内容不可见</string>
+
+    <!-- gn lilg 20120721 add for export start -->
+    <string name="file_path_internalmemory">export</string>
+    <string name="file_name_txt_format">%s.txt</string>
+    <string name="format_date_ymd">yyyyMMdd</string>
+    <string name="format_date_ymdhms">yyyy-MM-dd_HHmmss</string>
+    <string name="format_date_yyyymmdd">yyyy.MM.dd HH:mm</string>
+    <string name="str_defaultRecordExportTime">暂无导出记录</string>
+    <string name="str_defaultRecordImportTime">暂无导入记录</string>
+    <string name="str_preRecordExportTime">上一次导出时间: </string>
+    <string name="str_preRecordImportTime">上一次导入时间: </string>
+    <string name="str_importExport">导入/导出便签</string>
+    <string name="str_import_note">导入便签</string>
+    <string name="str_export_note">导出便签</string>
+    <string name="str_next">下一步</string>
+    <string name="str_sdcard">SD卡</string>
+    <string name="str_internal_memory">内部存储器</string>
+    <string name="str_all_select">全选</string>
+    <string name="str_no_select">全部取消</string>
+    <string name="str_import">导入</string>
+    <string name="str_export">导出</string>
+    <string name="str_export_confirm">确定导出</string>
+    <string name="str_export_msg">确定将所选便签导出到</string>
+    <string name="export_error_title">导出出错</string>
+    <string name="export_error_message_sdcard">导出过程中出现错误，请检查SD卡</string>
+    <string name="export_error_message_internal_memory">导出过程中出现错误，请检查内部存储器</string>
+    <string name="toast_import_no_data">没有可导入数据</string>
+    <string name="import_note_message_sd">正在导入便签数据"/SD卡</string>
+    <string name="import_note_message_internal">正在导入便签数据"内部存储器</string>
+    <string name="import_note_progress_message_first">"\n\n正在导入第</string>
+    <string name="import_note_progress_message_next">个便签(共</string>
+    <string name="import_note_progress_message_end">个)</string>
+    <string name="import_note_progress_message_title">正在导入便签数据</string>
+    <string name="import_note_progress_message_content">"\n\n正在导入第1个便签(共</string>
+    <string name="import_note_dialog_message_content">确定取消此次导入吗？</string>
+    <string name="import_note_no_sd">SD卡不存在或不可用。</string>
+    <string name="import_note_storage_unavailable">存储器不可用</string>
+    <string name="import_note_no_internal">内部存储器不存在或不可用。</string>
+    <string name="promat">提示</string>
+    <string name="toast_export_no_data">没有可导出数据</string>
+    <string name="export_note_dialog_message_first">"/SD卡</string>
+    <string name="export_note_dialog_message_next">文件夹"</string>
+    <string name="export_note_dialog_message_next_next">"内部存储器</string>
+    <string name="export_note_dialog_message_end">文件夹"</string>
+    <string name="export_note_dialog_message_end_end">中吗？</string>
+    <string name="export_note_message_sd">正在向"SD卡 %1$s%2$s "导出便签数据</string>
+    <string name="export_note_message_internal">正在向"内部存储器 %1$s%2$s "导出便签数据</string>
+    <string name="export_note_progress_message_first">\n\n正在导出第 %1$s 个便签(共 %2$s 个)</string>
+    <string name="export_note_progress_message_title">正在导出便签数据</string>
+    <string name="check_sd_content">请检测SD卡可用空间是否大于3M。</string>
+    <string name="check_internal_content">请检测内部存储器可用空间是否大于3M。</string>
+
+    <!-- gn lilg 20120721 add for export start -->
+
+
+    <!-- gn lilg 20120831 add for note alarm start -->
+    <string name="datetime_dialog_ok">设置</string>
+    <string name="datetime_dialog_cancel">取消</string>
+    <!-- gn lilg 20120831 add for note alarm end -->
+    <!-- gionee 20121218 jiating modify for CR00748511 begin -->
+    <string name="date_time_set">设置</string>
+    <string name="cancel">取消</string>
+    <string name="gn_dialog_title">设置时间</string>
+    <string name="gn_time_early">设置时间不能早于当前时间</string>
+    <!-- gn lilg 20120831 add for note alarm end -->
+    <!-- gionee 20121218 jiating modify for CR00748511 end -->
+
+    <!-- gn lilg 20120831 add for CR00693893 start -->
+    <string name="data_loading">正在加载便签...</string>
+    <!-- gn lilg 20120831 add for CR00693893 end -->
+
+    <string name="location">地理位置</string>
+    <string name="more">更多</string>
+    <string name="other_location">选择地理位置</string>
+    <string name="gn_location_nonet">网络连接失败，请检查您的网络连接</string>
+    <string name="gn_location_loading">正在获取您的位置，请稍候</string>
+    <string name="gn_location_nogps_tip">GPS没有打开，打开GPS更精确</string>
+    <string name="gn_location_tip_title">流量提示</string>
+    <string name="gn_location_tip_body">您现在正在使用运营商网络，继续操作可能会产生流量，具体费用请咨询当地运营商</string>
+    <string name="gn_location_without_tip">下次不再提醒</string>
+    <string name="gn_location_know_it">知道了</string>
+    <string name="gn_location_others_poi">更多位置</string>
+    <string name="gn_location_error">抱歉，没有加载到您的位置</string>
+    <string name="gn_location_no_setting">请在位置信息访问权限中打开网络位置信息</string>
+    <string name="gn_location_no_others_poi">没有更多位置</string>
+    <string name="alarm">定时</string>
+    <string name="geolocation">定位</string>
+    <string name="check">查看</string>
+    <string name="close">关闭</string>
+    <string name="alarm_modify">修改</string>
+    <string name="modify">修改</string>
+    <string name="note_send_luncher">发送至桌面</string>
+    <string name="note_not_send_luncher_toast">空便签不能被发送至桌面</string>
+    <string name="empty_note_not_send_luncher_toast">空便签不能分享</string>
+    <string name="note_send_luncher_failed_noscence_toast">发送失败，桌面无足够空间</string>
+    <string name="note_send_luncher_success_toast">已添加至桌面</string>
+    <string name="note_send_luncher_haved_toast">便签已在桌面上</string>
+    <string name="note_send_luncher_failed_toast">发送桌面失败</string>
+    <string name="note_not_support_send_luncher">当前桌面不支持发送到桌面功能，请安装金立桌面。</string>
+    <!-- 关于页面  GN pengwei 2012-11-27 add begin -->
+    <string name="about_mode">关于便签</string>
+    <string name="about_title">便签</string>
+    <string name="about_version">版本号:</string>
+    <string name="about_new_function">新增功能:</string>
+    <string name="about_add_position">查看便签新增滑动效果</string>
+    <string name="about_add_alarm">优化整体加载速度</string>
+    <string name="about_add_iexport">新增录音功能</string>
+    <string name="about_add_widget">优化定时提醒</string>
+    <!-- Gionee <wangpan><2014-03-19> delete for CR01071390 begin -->
+    <!-- <string name="about_record">优化桌面widget支持</string> -->
+    <!-- Gionee <wangpan><2014-03-19> delete for CR01071390 end -->
+    <string name="about_copyright">金立通信设备有限公司版权所有</string>
+    <string name="about_update">版本更新</string>
+    <!-- 关于页面  GN pengwei 2012-11-27 add end -->
+    <!-- update -->
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="upgrade_title">金立便签升级</string>
+    <string name="donot_download">暂不安装</string>
+    <string name="download_now">立即安装</string>
+    <string name="force">该版本只有升级之后才可以使用，如果不升级可能导致客户端不能使用</string>
+    <string name="new_down_desc1">温馨提示：</string>
+    <string name="new_down_desc2">会保存上一版本的使用记录。</string>
+    <string name="new_down_desc3">升级使用流量较多，建议使用WIFI。</string>
+    <string name="now_version">当前版本：</string>
+    <string name="new_version">最新版本：</string>
+    <string name="new_feature_desc">改进信息：</string>
+    <string name="file_size">大小</string>
+    <string name="no_display_this_version">本版本不再提示。</string>
+    <string name="pay_show_title">提示</string>
+    <string name="message_update_error">版本更新出错，请确认网络良好且存储卡有足够空间，重新更新！</string>
+    <string name="download_retry">重新更新</string>
+    <string name="message_network_error">网络异常，请检查网络连接后再尝试！</string>
+    <string name="message_update_error_nospace">存储卡存储空间不足，不能完成更新操作，请检查存储卡再尝试！</string>
+    <string name="message_update_error_nosdcard">存储卡不存在，不能完成更新操作，请检查存储卡再尝试！</string>
+    <string name="message_update_apk">正在进行金立便签升级</string>
+    <string name="message_update_check">正在检查配置项</string>
+    <!-- update -->
+    <!-- gionee 20121204 jiating modify for CR00739261 begin -->
+    <string name="gn_importnote_complete">便签导入已完成</string>
+    <string name="gn_exportnote_complete">便签导出已完成</string>
+    <!-- gionee 20121204 jiating modify for CR00739261 end -->
+    <string name="gn_about_no_need_update">已经是最新版本，不需要更新</string>
+   	<string name="note_alarm_failure">闹铃失效</string>
+   	<string name="alarm_today">今天</string>
+   	
+   	<!-- gionee lilg 20130111 add for default note begin -->
+    <string name="default_note_title">欢迎使用便签！</string>
+    <!-- gionee wangpan 20140215 modify for CR01035186 begin -->
+    <string name="default_note_content">欢迎使用便签！\n\t您可以随时在便签中记录想法、信息或者待办事项，并添加提醒和地理位置信息；\n\t便签也提供了调整便签背景、创建文件夹、导入导出等实用功能，便签助您更好地生活！</string>
+    <!-- gionee wangpan 20140215 modify for  CR01035186 end -->
+    <!-- gionee lilg 20130111 add for default note end -->
+    <string name="note_recording">录音</string>
+    
+    <!-- gionee lilg 20130220 add for note media begin -->
+    <string name="message_media_recorder_start_error">启动录音失败!</string>
+    <string name="message_media_player_start_error">播放失败!</string>
+    <string name="message_media_recorder_is_recording">正在录音，无法播放文件</string>
+    <string name="message_media_player_file_not_exists">播放文件不存在</string>
+    <!-- gionee lilg 20130220 add for note media end -->
+    <string name="no_title">无标题</string>
+    <string name="home_load_datas_error">便签获取数据异常，程序即将退出</string>
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export begin -->
+    <string name="export_alert_exporting">正在执行导出</string>
+    <string name="import_alert_importing">正在执行导入</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for import or export end -->
+    
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record begin -->
+    <string name="message_media_record_num_max">录音数量不能超过5条</string>
+    <string name="message_media_record_time_max">录音时间达到最大值，停止录音</string>
+    <string name="message_sdcard_internal_memory_both_not_ok">SD卡及内部存储器均不可用</string>
+    <string name="message_sdcard_internal_memory_both_not_exists_or_unavailable">存储器不可用，无法添加录音</string>
+    <string name="message_sdcard_internal_memory_both_storage_is_full">储存空间不足，无法添加录音</string>
+    <string name="message_sdcard_not_ok">SD卡不可用或空间不足</string>
+    <string name="message_internal_memory_not_ok">内部存储器不可用或空间不足</string>
+    <string name="message_media_record_add_fail">储存路径错误，当前便签无法添加录音</string>
+    <!-- Gionee <lilg><2013-03-19> add alert info for media record end -->
+    
+    <!-- Gionee <lilg><20130416> add for note batch operate begin -->
+    <string name="message_batch_delete">正在执行批量删除</string>
+    <string name="message_batch_move">正在执行批量移动</string>
+    <!-- Gionee <lilg><20130416> add for note batch operate end -->
+    
+    <string name="note_detail_menu">菜单</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gn pengwei 20121205 modify  begin -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_4x"
+    android:minHeight="280dip"
+    android:minResizeHeight="140dip"
+    android:minResizeWidth="140dip"
+    android:minWidth="280dip"
+    android:previewImage="@drawable/widget_4x4_preview"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0" >
+
+</appwidget-provider>
+<!-- gn pengwei 20121205 modify  begin -->

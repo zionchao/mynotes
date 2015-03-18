@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MainActivity的布局文件 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gn_background_holo_light" >
+
+    <!-- gionee jiating 20120522 change view begin -->
+
+    <LinearLayout
+        android:id="@+id/view_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_bottom_operator"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <!-- gionee 20121214 jiating modfity for theme end -->
+
+        <!--Gionee <wangpan><2014-05-15> modify for CR01249465 begin-->
+        <com.gionee.note.adapter.DragGridViewReal
+            android:id="@+id/home_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="0dp"
+            android:listSelector="#00000000"
+            android:layout_weight="1"
+            android:numColumns="2"
+            android:paddingStart="0dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+
+        <com.gionee.note.adapter.DragListViewReal
+            android:id="@+id/home_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"  
+            android:layout_weight="1"
+            android:listSelector="#00000000" 
+            android:drawSelectorOnTop="false"
+            android:paddingStart="@dimen/listview_margin_left_right"
+            android:paddingEnd="@dimen/listview_margin_left_right"
+            android:paddingBottom="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="gone" />
+        <!--Gionee <wangpan><2014-05-15> modify for CR01249465 end-->
+    </LinearLayout>
+    <!-- Gionee <wangpan><2014-02-19> modify for  CR01066766 begin-->
+     
+    <ImageView
+        android:id="@+id/home_no_note_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/no_note_icon_white" />
+    
+    <amigo.widget.AmigoTextView
+        android:id="@+id/home_no_note_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/home_no_note_image"
+        android:text="@string/no_note_folder"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/home_note_nothing"
+        android:textSize="@dimen/home_no_note_text_size" />
+    
+    <!-- Gionee <wangpan><2014-02-19> modify for CR01066766  end-->
+    
+    <LinearLayout
+        android:id="@+id/home_bottom_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        
+        
+        <LinearLayout
+            android:id="@+id/home_oprate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:minHeight="52dp"
+            style="@style/BottomOprationStyle" >
+
+            <LinearLayout
+                android:id="@+id/home_delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/gn_com_delete_bg" />
+                
+                <amigo.widget.AmigoTextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete"
+                    android:textSize="12sp"
+                    android:textColor="@color/all_edit_bottom_btn_text_color"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_blank_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/gn_com_share_bg" />
+                
+                <amigo.widget.AmigoTextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share"
+                    android:textSize="12sp"
+                    android:textColor="@color/all_edit_bottom_btn_text_color"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- gionee jiating 20120522 change view end -->
+    </LinearLayout>
+
+</RelativeLayout>

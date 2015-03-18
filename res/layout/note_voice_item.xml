@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Note信息详细展示页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/note_voice_label"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/note_media_record_label_bg2"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/voice_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+			android:layout_centerVertical="true"
+            android:src="@drawable/icon_media_recorder" />
+
+        <amigo.widget.AmigoTextView
+            android:id="@+id/voice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:singleLine="true"
+            android:layout_toEndOf="@id/voice_img"
+			android:layout_centerVertical="true"
+            android:textColor="@color/note_media_recorder_text_corlor"
+            android:textSize="@dimen/small_text_size" />
+
+            <amigo.widget.AmigoTextView
+                android:id="@+id/voice_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/voice_text"
+                android:textColor="@color/note_media_recorder_text_corlor"
+                android:textSize="@dimen/small_text_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

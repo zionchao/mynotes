@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ginoee gaoj 2012-6-28 added for CR00623375 start
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+		 android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <amigo.widget.AmigoTextView 
+            android:id="@+id/gn_date_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/gn_select_bg"
+            android:gravity="center"
+            android:textColor="@color/time_selected_color"
+            android:layout_weight="1.0"/>
+        <amigo.widget.AmigoTextView 
+            android:id="@+id/gn_time_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/gn_light_bg"
+            android:gravity="center"
+            android:textColor="@color/time_unselected_color"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+    <amigo.widget.AmigoDatePicker
+        android:id="@+id/gn_datePicker"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnersShown="true"
+        android:calendarViewShown="false"
+        />
+    <amigo.widget.AmigoTimePicker
+        android:id="@+id/gn_timePicker"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>

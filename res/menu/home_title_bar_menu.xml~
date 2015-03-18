@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- gionee 20121218 jiating modify for theme begin -->
+  <!--  
+    <item
+        android:id="@+id/action_gridview"
+        android:alphabeticShortcut="g"
+        android:title="@string/select_gridview_mode"
+        android:icon="@drawable/gn_note_home_title_gridview"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/action_listview"
+        android:alphabeticShortcut="l"
+        android:title="@string/select_listview_mode"
+        android:icon="@drawable/gn_note_home_title_list"
+        android:showAsAction="always" />
+    -->
+    <item  
+        android:id="@+id/gn_note_search_item"
+        android:title="@string/search"
+        android:icon="@drawable/gn_note_home_searchbutton_onoff_white"
+        android:showAsAction="ifRoom|withText"
+        />
+    
+    <item  
+        android:id="@+id/gn_note_add_note_item"
+        android:title="@string/new_note"
+        android:icon="@drawable/gn_note_addbutton_onoff_white"
+        android:showAsAction="ifRoom|withText"
+        />
+    <item  
+        android:id="@+id/gn_note_add_folder_item"
+        android:title="@string/new_folder"
+       
+        android:showAsAction="never"
+        />
+      <item  
+        android:id="@+id/gn_note_all_operator_item"
+        android:title="@string/all_operate"
+       
+        android:showAsAction="never"
+        />
+      
+        <item  
+        android:id="@+id/gn_note_import_export_item"
+        android:title="@string/inport_export"
+       
+        android:showAsAction="never"
+        />
+
+          <item  
+        android:id="@+id/gn_note_about_item"
+        android:title="@string/about_mode"
+       
+        android:showAsAction="never"
+        />
+
+<!-- gionee 20121218 jiating modify for theme end -->
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gn_background_holo_light"
+    >
+    
+<com.gionee.note.GuideGallery
+    android:paddingTop="15dp"
+    android:id="@+id/gallery"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:spacing="15dp"
+    android:layout_weight="7"
+    android:unselectedAlpha="1"
+    
+    />
+<amigo.widget.AmigoTextView 
+    android:id="@+id/gallery_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:unselectedAlpha="1"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:textSize="18sp"
+    />
+</LinearLayout>

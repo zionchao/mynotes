@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#50000000" >
+
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 begin-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/note_attachment_bg"
+        android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|center_horizontal|center_vertical" 
+        android:layout_weight="1"
+        android:id="@+id/bt_note_voice"> 
+        <ImageView
+            android:id="@+id/note_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical" 
+            android:background="?android:attr/actionBarItemBackground"
+            android:contentDescription="@null"
+            android:src="@drawable/gn_voice" />
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv_note_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:textColor="#66000000"
+            android:textSize="@dimen/small_text_size" 
+            android:text="@string/note_recording"
+        /> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|center_horizontal|center_vertical" 
+        android:layout_weight="1"
+        android:id="@+id/bt_note_location"> 
+        <ImageView
+            android:id="@+id/note_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical" 
+            android:background="?android:attr/actionBarItemBackground"
+            android:contentDescription="@null"
+            android:src="@drawable/gn_location" />
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv_note_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:textColor="#66000000"
+            android:textSize="@dimen/small_text_size" 
+            android:text="@string/geolocation"
+        /> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|center_horizontal|center_vertical" 
+        android:layout_weight="1"
+        android:id="@+id/bt_note_alarm"> 
+        <ImageView
+            android:id="@+id/note_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical" 
+            android:background="?android:attr/actionBarItemBackground"
+            android:contentDescription="@null"
+            android:src="@drawable/gn_alarm" />
+        <amigo.widget.AmigoTextView
+            android:id="@+id/tv_note_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:textColor="#66000000"
+            android:textSize="@dimen/small_text_size" 
+            android:text="@string/alarm"
+        /> 
+    </LinearLayout>
+    </LinearLayout>
+    <!--Gionee <wangpan><2014-05-15> modify for CR01249465 end-->
+
+</LinearLayout>
