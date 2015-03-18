@@ -1,0 +1,2 @@
+# mynote
+my learn notes
